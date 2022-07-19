@@ -614,6 +614,10 @@ input[type=submit] {
   color: #8A8AA0;
 }
 
+section {
+  position: relative;
+}
+
 /* Typography
 -------------------------------------------------------------- */
 h1,
@@ -628,7 +632,6 @@ h6 {
 
 h1 {
   font-size: 70px;
-  font-weight: 700;
 }
 
 h2 {

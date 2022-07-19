@@ -1857,6 +1857,51 @@
 }
 }
 
+.animate-zoom2 {
+  animation-name: zoom2; 
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+-webkit-animation-name: zoom2; 
+  -webkit-animation-duration: 3s; 
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+
+-moz-animation-name: zoom2; 
+  -moz-animation-duration: 3s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+
+-ms-animation-name: zoom-fade; 
+  -ms-animation-duration: 3s;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+
+-o-animation-name: zoom-fade; 
+  -o-animation-duration: 3s; 
+  -o-animation-iteration-count: infinite;
+  -o-animation-timing-function: linear;
+}
+
+@keyframes zoom2 {
+0% {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+50% {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+100% {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+}
+
 @keyframes link-icon {
 	0% {
 		transform: translateX(0); opacity: 1;

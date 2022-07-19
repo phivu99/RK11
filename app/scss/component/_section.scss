@@ -122,6 +122,7 @@
     -webkit-animation-delay: 0.2s;
     animation-delay: 0.2s;
 }
+
 // flat contests
 .flat-contests {
     padding-bottom: 108px;
@@ -194,10 +195,10 @@
 
 // 
 .flat-outlets {
-    padding-bottom: 102px;
+    padding-bottom: 202px;
     position: relative;
     .book-now {
-        bottom: 108px;
+        bottom: 255px;
     }
     .wrap-heading {
         padding-right: 90px;
@@ -245,6 +246,7 @@
     }
 }
 
+// counter
 .thems-counter {
     padding-top: 13px;
     padding-left: 46px;
@@ -301,10 +303,12 @@
     }
 }
 
-
+// flat download
 .flat-download {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 234px;
+    .book-now {
+        bottom: 161px;
+    }
     .wrap-images {
         position: relative;
         text-align: center;
@@ -346,11 +350,210 @@
     .wrap-download {
         padding: 43px 0px 0 120px;
         .heading-section {
+            margin-bottom: 37px;
             h1 {
                 letter-spacing: -0.5px;
                 margin-bottom: 54px;
             }
         }
+        .check-box {
+            margin-bottom: 40px;
+            .check {
+                margin-bottom: 33px;
+                padding-right: 92px;
+                i {
+                    color: $color-2;
+                    font-size: 10px;
+                    width: 18px;
+                    height: 18px;
+                    line-height: 18px;
+                    text-align: center;
+                    border-radius: 50%;
+                    background:#48BC65;
+                    margin-right: 17.5px;
+                }
+                h4 {
+                    font-weight: 500;
+                    letter-spacing: 0.4px;
+                    margin-bottom: 18px;
+                }
+                p {
+                    margin-left: -1px;
+                    color: #818089;
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .group-button {
+            .store {
+                margin-right: 23px;
+            }
+        }
     }
 }
 
+// flat event
+.flat-event {
+    padding: 0px 0 121px;
+    .book-now {
+        bottom: 119px;
+    }
+    .wrap-event {
+        background: linear-gradient(153.06deg, #311964 -0.31%, #3F0D31 99.69%);
+        margin-left: 65px;
+        padding: 79px 80px;
+        position: relative;
+        border-radius: 10px;
+        .box-heading {
+            text-align: end;
+            padding-top: 8px;
+            width: 33%;
+            .heading-section {
+                margin-bottom: 59px;
+            }
+        }
+        .event-box {
+            width: 340px;
+            height: 399px;
+            position: absolute;
+            bottom: 20.8%;
+            left: 38%;
+            padding: 0px 38px 69px;
+            display: flex;
+            align-items: end;
+            border-radius: 10px;
+            background: $bg-color;
+            @include transition3;
+            &:hover {
+                background: linear-gradient(220.06deg, #E6902B -0.31%, #A91B3D 99.69%);;
+            }
+            .title-event {
+                font-family: $font-3;
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 47px;
+            }
+        }
+    }
+}
+
+.flat-promotions {
+    padding-bottom: 122px;
+    .book-now {
+        bottom: 119px;
+    }
+    .wrap-heading {
+        padding: 115px 105px 30px 0;
+        position: relative;
+        .heading-section {
+            margin-bottom: 59px;
+        }
+        .mark-music {
+            position: absolute;
+            bottom: -11.5%;
+            left: 42.5%;
+        }
+    }
+    .wrap-images {
+        padding: 0 61px 0 45px;
+        position: relative;
+        img {
+            border-radius: 10px;
+            @include transition3;
+            &:hover {
+                filter: drop-shadow(0px 0px 8px #fff);
+            }
+        }
+        .image-1 {
+            margin-top: 17px;
+            z-index: 5;
+        }
+        .image-2 {
+            margin-right: 30px;
+            z-index: 5;
+        }
+        .image-3 {
+            text-align: end;
+            margin-top: -71px;
+            position: relative;
+            opacity: 0.9;
+            img {
+                border-radius: 20px;
+            }
+        }
+        .mark-circle {
+            position: absolute;
+            left: 0;
+            top: 49px;
+            right: 47px;
+            bottom: 0;
+            
+        } 
+    }
+}
+
+// flat contact
+.flat-contact {
+    padding-bottom: 81px;
+    .book-now {
+        bottom: 80px;
+    }
+    .wrap-contact {
+        padding-top: 8px;
+        .heading-section {
+            margin-bottom: 31.5px;
+          
+        }
+    }
+    .tf-map {
+        padding-left: 90px;
+        .map-content {
+            width: 100%;
+            height: 641px;
+            border-radius: 10px;
+        }
+    }
+}
+
+#comments {
+    .comment-form {
+        fieldset {
+            position     : relative;
+            overflow     : hidden;
+            width        : 100%;
+            margin-bottom: 14.5px;  
+            input {
+                background-color: rgba(255, 255, 255, 0.04);
+                border: 1px solid rgba(255, 255, 255, 0.16);
+                padding: 7px 15px 8px 19px;
+                border-radius: 8px;
+                &::placeholder {
+                    color: $color-6;
+                    line-height: 22px;
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        textarea  {
+            background-color: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.16);
+            padding: 12px 15px 22px 19px;
+            border-radius: 8px;
+            &::placeholder {
+                color: $color-6;
+                line-height: 22px;
+                font-size: 14px;
+
+            }
+        }
+        .button {
+            margin-top: 46px;
+           border: unset;
+           padding: 17px 32.5px 15px;
+        }
+    }
+}
