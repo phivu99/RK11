@@ -850,7 +850,7 @@ Animations
 }
 
 .flat-outlets {
-  padding-bottom: 200px;
+  padding-bottom: 102px;
   position: relative;
 }
 .flat-outlets .book-now {
@@ -943,18 +943,54 @@ Animations
   justify-content: end;
 }
 
+.flat-download {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.flat-download .wrap-images {
+  position: relative;
+  text-align: center;
+  padding-right: 8px;
+}
+.flat-download .wrap-images .mark-circle {
+  position: absolute;
+  top: 33px;
+  left: -8px;
+  right: 0;
+}
+.flat-download .wrap-images .image-mobi {
+  box-shadow: 0px 8px 12px rgba(22, 14, 17, 0.2);
+}
 .flat-download .wrap-images .image-mobi img {
   position: relative;
   padding-top: 19px;
   z-index: 9;
-  padding-left: 10px;
 }
 .flat-download .wrap-images .image-mobi .icon-shadow {
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
   position: absolute;
+  left: 0px;
+  top: 0;
+  right: 70px;
+}
+.flat-download .wrap-images .image-mobi2 {
+  margin-top: -180px;
+  margin-left: 71px;
+  z-index: 99;
+  position: relative;
+}
+.flat-download .wrap-images .image-mobi3 {
+  z-index: 99;
+  position: absolute;
+  top: 46.5%;
+  right: 24px;
+  filter: drop-shadow(0px 8px 12px rgba(22, 14, 17, 0.2));
+}
+.flat-download .wrap-download {
+  padding: 43px 0px 0 120px;
+}
+.flat-download .wrap-download .heading-section h1 {
+  letter-spacing: -0.5px;
+  margin-bottom: 54px;
 }
 
 /* Footer
@@ -1731,6 +1767,13 @@ p {
   font-size: 18px;
   line-height: 28px;
   color: var(--primary-color2);
+}
+
+.p-16 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--primary-color4);
 }
 
 .p-20 {
