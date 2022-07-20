@@ -41,26 +41,6 @@
   max-width: 100%;
 }
 
-.tf-section2 {
-  padding: 105px 0;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  position: relative;
-}
-
-.tf-section {
-  padding: 104px 0;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  position: relative;
-}
-
 /* Page Title Inner
 -------------------------------------------------------------- */
 .flat-title-page.inner {
@@ -974,16 +954,6 @@
 }
 .flat-development .wrap-development:hover .icon svg {
   transform: rotateY(180deg);
-}
-
-.is_dark .flat-development {
-  background-color: #180D45;
-}
-.is_dark .flat-development .heading-section h2 {
-  color: var(--primary-color);
-}
-.is_dark .flat-development .heading-section h5 {
-  color: #FABE3C;
 }
 
 .flat-faq {

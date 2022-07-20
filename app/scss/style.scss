@@ -82,7 +82,8 @@ html {
 }
 
 body {
-    background: var(--primary-color);
+    // background: var(--primary-color);
+    background-image: url(../../assets/images/section/bg-body.jpg);
     line-height: 1;
     padding-right: 0 !important;
 }
@@ -800,22 +801,6 @@ label.error {
     padding-bottom: 20px !important;
     margin-bottom: -20px !important;
 }
-.swiper-button-next {
-    right: 44.2%;
-    bottom: 4px;
-    top: unset;
-    &::after {
-        font-size: 16px;
-    }
-}
-.swiper-button-prev {
-    left: 44.2%;
-    bottom: 4px;
-    top: unset;
-    &::after {
-        font-size: 16px;
-    }
-}
 
 #wrapper {
     position: relative;
@@ -827,7 +812,6 @@ label.error {
 .wrapper-style {
     background:  #FAF8FF;
 }
-
 
 .lh-us {
     line-height: unset;

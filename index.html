@@ -10,9 +10,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <link rel="stylesheet" href="app/dist/font-awesome.css">
-    <link rel="stylesheet" href="app/dist/responsive.css">
+    
     <link rel="stylesheet" href="app/dist/app.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome.css">
+    <link rel="stylesheet" href="app/dist/responsive.css">
 
     <!-- Favicon and Touch Icons  -->
     <link rel="shortcut icon" href="assets/images/logo/Favicon.png">
@@ -33,7 +34,7 @@
     </div>
     <!-- /preload -->
 
-    <div id="wrapper" class="bg-wrapper ">
+    <div id="wrapper">
         <div class="mark-1 home ">  <img src="assets/images/mark/mark-1.png" alt="img" ></div>
         <div class="mark-2 home animate-zoom">  <img src="assets/images/mark/mark-2.png" alt="img" ></div>
         <div id="page" class="clearfix">
@@ -171,8 +172,7 @@
                                             </div>                                        
                                         </div>
                                     </div>                             
-                                </div>    
-                                                    
+                                </div>                                                   
                             </div>
                             <div class="swiper-slide">
                                 <div class="slider-item">
@@ -215,7 +215,7 @@
                     <a class="book-now slider-home" href="#"> Book Now</a>
                 </section>
 
-            <section class="flat-contests">
+            <section class="flat-contests tf-section">
                 <div class="themes-container">
                     <div class="row">
                         <div class="col-lg-6 col-md-5 col-sm-12">
@@ -239,7 +239,7 @@
                             </div>                                                                                                                                     
                         </div>
                                    
-                        <div class="col-lg-6 col-md-4 col-sm-12">
+                        <div class="col-lg-6 col-md-7 col-sm-12">
                             <div class="wrap-contests">
                                 <div class="heading-section">
                                     <h1>contests</h1>
@@ -282,7 +282,7 @@
                 <a class="book-now" href="#"> Book Now</a>
             </section>
 
-            <section class="flat-outlets">
+            <section class="flat-outlets tf-section">
                 <div class="themes-container">
                     <div class="row">
                         <div class="col-lg-6 col-md-5 col-sm-12">
@@ -297,7 +297,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-5 col-sm-12">  
+                        <div class="col-lg-6 col-md-7 col-sm-12">  
                             <div class="thems-counter tf-counter"> 
                                 <div class="wrap-one flex">
                                     <div class="counter-box counter-1 flex">
@@ -342,7 +342,7 @@
                                 </div>
                             </div>                                                                                                                                 
                         </div>
-                        <div class="col-lg-12 col-md-4 col-sm-12">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
                             <div class="swiper-container carousel show-boder ">
                                 <div class="swiper-wrapper slider-style">                               
                                     <div class="swiper-slide">
@@ -470,7 +470,7 @@
                 <a class="book-now" href="#"> Book Now</a>
             </section>
 
-            <section class="flat-download">
+            <section class="flat-download tf-section">
                 <div class="themes-container">
                     <div class="row">
                         <div class="col-lg-6 col-md-5 col-sm-12">
@@ -500,7 +500,7 @@
                                 </div>                                       
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-5 col-sm-12">
+                        <div class="col-lg-6 col-md-7 col-sm-12">
                             <div class="wrap-download">
                                 <div class="heading-section">
                                     <h1>Download App</h1>
@@ -537,7 +537,7 @@
                 <a class="book-now" href="#"> Book Now</a>
             </section>
 
-            <section class="flat-event">
+            <section class="flat-event tf-section">
                 <div class="themes-container2">
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12">
@@ -567,7 +567,7 @@
                 <a class="book-now" href="#"> Book Now</a>
             </section>
 
-            <section class="flat-promotions">
+            <section class="flat-promotions tf-section">
                 <div class="themes-container">
                     <div class="row">
                         <div class="col-lg-6 col-md-7 col-sm-12">
@@ -611,6 +611,114 @@
                 </div>
                 <a class="book-now" href="#"> Book Now</a>
             </section>
+
+              <section class="flat-contact tf-section">
+                <div class="themes-container">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-6 col-sm-12">
+                            <div class="wrap-contact">
+                                <div class="heading-section">
+                                    <h1>Contact Us</h1>
+                                    <p class="p-20">In these hard times, I think it is important we all contribute to the community. For this reason, I have designed a template for Sketch.</p>
+                                </div>
+
+                                <div id="comments">
+                                    <div id="respond" class="respond-comment">
+                                        <form method="post" id="contactform" class="comment-form form-submit"
+                                            action="./contact/contact-process.php" accept-charset="utf-8"
+                                            novalidate="novalidate">
+                                            <div class="text-wrap clearfix">
+                                                <fieldset class="name-wrap style-text">
+                                                    <input type="text" id="name" class="tb-my-input" name="name"
+                                                        tabindex="1" placeholder="Full Name" value="" size="32"
+                                                        aria-required="true" required="">
+                                                </fieldset>
+                                                <fieldset class="email-wrap style-text">
+                                                    <input type="email" id="email" class="tb-my-input" name="email"
+                                                        tabindex="2" placeholder="Email" value="" size="32"
+                                                        aria-required="true" required="">
+                                                </fieldset>
+                                                <fieldset class="phone-wrap style-text">
+                                                    <input type="tel" id="phone" class="tb-my-input" name="phone"
+                                                        tabindex="1" placeholder="Phone Number" value="" size="32"
+                                                        aria-required="true" required="">
+                                                </fieldset>
+                                            </div>
+                                            <fieldset class="message-wrap">
+                                                <textarea id="comment-message" name="message" rows="3" tabindex="4"
+                                                    placeholder="Message"
+                                                    aria-required="true"></textarea>
+                                            </fieldset>
+
+                                            <button name="submit" type="submit" id="comment-reply"
+                                                class="button btn-submit-comment btn-action"><span>Let’s Enjoy</span></button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-md-6 col-sm-12">
+                            <div class="tf-map">
+                                <iframe class="map-content"
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7302.453092836291!2d90.47477022812872!3d23.77494577893369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1627293157601!5m2!1svi!2s" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="book-now" href="#"> Book Now</a>
+            </section>
+
+            
+            <footer id="footer" class="clearfix page">
+                <div class="themes-container">
+                    <div class="row">
+                        <div class="col-lg-9 col-md-12 col-sm-12">
+                            <div class="widget-box flex-three">
+                                <div class="widget widget-logo ">
+                                    <div class="logo-footer style" id="logo-footer">
+                                        <a href="index.html">
+                                            <img id="logo_footer" src="assets/images/logo/logo.png" alt="img" width="100" height="100">
+                                        </a>
+                                    </div>                                            
+                                </div>
+                                <div class="widget-contact flex-one">
+                                    <div class="contact-box flex">
+                                        <div class="icon-box flex">
+                                            <div class="icon">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                            </div>                                    
+                                            <div class="title-box">
+                                                <p class="p-16">Jalan Gombak, 28750 Bentong, Malaysia</p>
+                                            </div>   
+                                        </div>
+                                        <div class="icon-box  icon-box2 flex">
+                                            <div class="icon">
+                                                <i class="fas fa-phone-alt"></i>
+                                            </div>                                    
+                                            <div class="title-box">
+                                                <a href="tel:0123456789"><p class="p-16"> +33 415 65356 - 9</p></a>
+                                            </div>   
+                                        </div>
+                                        <div class="icon-box icon-box3 flex">
+                                            <div class="icon">
+                                                <i class="far fa-envelope"></i>
+                                            </div>                                    
+                                            <div class="title-box">
+                                                <a href="info:contact@lugar.com"><p class="p-16">contact@lugar.com</p></a>
+                                            </div>   
+                                        </div>                                                                                                          
+                                    </div> 
+                                    
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-lg-3 col-md-12 col-sm-12">
+                            <div class="copy-right p-16"><a href="#" class="text-color-">Themesflat. </a>Copyright@ 2022 KR11</div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
 
             
 
