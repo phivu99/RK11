@@ -647,6 +647,27 @@ Animations
   margin-bottom: 27px;
 }
 
+.only-pagination {
+  position: absolute;
+  right: 38px;
+  z-index: 999;
+  top: 46%;
+}
+.only-pagination .pagination {
+  position: relative;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  margin-bottom: 16px;
+}
+.only-pagination .pagination.active {
+  background: var(--primary-color2);
+}
+.only-pagination .pagination:hover {
+  background: var(--primary-color2);
+}
+
 .book-now {
   background: linear-gradient(173.06deg, #E6902B -0.31%, #A91B3D 99.69%) border-box, linear-gradient(173.06deg, #E6902B -0.31%, #A91B3D 99.69%) padding-box;
   border: 2px solid transparent;
@@ -762,6 +783,9 @@ Animations
 .flat-contests .book-now {
   bottom: 108px;
 }
+.flat-contests .only-pagination {
+  top: 30.2%;
+}
 .flat-contests .wrap-image {
   padding: 0px 15px 0 36px;
 }
@@ -830,6 +854,9 @@ Animations
 }
 .flat-outlets .book-now {
   bottom: 255px;
+}
+.flat-outlets .only-pagination {
+  top: 25.6%;
 }
 .flat-outlets .wrap-heading {
   padding-right: 90px;
@@ -940,6 +967,9 @@ Animations
 .flat-download .book-now {
   bottom: 161px;
 }
+.flat-download .only-pagination {
+  top: 27.5%;
+}
 .flat-download .wrap-images {
   position: relative;
   text-align: center;
@@ -1028,6 +1058,9 @@ Animations
 .flat-event .book-now {
   bottom: 119px;
 }
+.flat-event .only-pagination {
+  top: 37%;
+}
 .flat-event .wrap-event {
   background: linear-gradient(153.06deg, #311964 -0.31%, #3F0D31 99.69%);
   margin-left: 65px;
@@ -1075,6 +1108,9 @@ Animations
 }
 .flat-promotions .book-now {
   bottom: 119px;
+}
+.flat-promotions .only-pagination {
+  top: 24.8%;
 }
 .flat-promotions .wrap-heading {
   padding: 115px 105px 30px 0;
@@ -1134,6 +1170,9 @@ Animations
 .flat-contact .book-now {
   bottom: 80px;
 }
+.flat-contact .only-pagination {
+  top: 32%;
+}
 .flat-contact .wrap-contact {
   padding-top: 8px;
 }
@@ -1187,7 +1226,7 @@ Animations
 /* Footer
 -------------------------------------------------------------- */
 #footer {
-  padding: 0px 0 200px;
+  padding: 0px 0 25px;
   position: relative;
 }
 
@@ -1601,6 +1640,7 @@ Animations
   line-height: 29px;
   font-size: 18px;
   padding-right: 100px;
+  color: var(--primary-color2);
 }
 .slider .slider-item .content .mark-01 {
   position: absolute;

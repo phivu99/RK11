@@ -330,13 +330,8 @@
 
                 if (windowTop > (offsetTop - 100) && windowTop < (offsetTop + outerHeight)) {
                     var elemId = $(elem).attr('id');
-                    $(".main-nav ul li").removeClass('current-menu-item ');
-                    $(".main-nav ul li a[href='#" + elemId + "']").closest('.menu-item').addClass('current-menu-item ');
-                }
-                if (windowTop > (offsetTop - 100) && windowTop < (offsetTop + outerHeight)) {
-                    var elemId = $(elem).attr('id');
-                    $(".main-nav.style-2 ul li a").removeClass('active');
-                    $(".main-nav.style-2 ul li a[href='#" + elemId + "']").addClass('active');
+                    $(".only-pagination a").removeClass('active ');
+                    $(".only-pagination a[href='#" + elemId + "']").addClass('active');
                 }
             });
         };

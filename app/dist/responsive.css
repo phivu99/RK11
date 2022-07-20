@@ -63,10 +63,11 @@
   }
   .slider .slider-item .content .heading {
     padding-right: 15px;
+    margin-bottom: 40px;
   }
   .slider .slider-item .content .heading h1 {
-    font-size: 60px;
-    line-height: 70px;
+    font-size: 41px;
+    line-height: 51px;
   }
   .slider .slider-item .content .heading h2 {
     margin-bottom: 20px;
@@ -88,6 +89,15 @@
   }
   .slider .themes-container {
     flex-wrap: wrap;
+  }
+  .slider .book-now {
+    bottom: 60px;
+  }
+
+  .heading-section h1 {
+    font-size: 41px;
+    line-height: 51px;
+    margin-bottom: 25px;
   }
 
   .swiper-pagination {
@@ -120,14 +130,71 @@
     max-width: calc(100% - 50px);
     max-height: calc(100% - 90px);
   }
+
+  .flat-contests .wrap-image {
+    margin-bottom: 35px;
+  }
+  .flat-contests .wrap-contests .check-box {
+    margin-bottom: 40px;
+  }
+
+  .thems-counter .counter-box .number {
+    font-size: 50px;
+  }
+
+  .flat-contact {
+    padding-bottom: 55px;
+  }
+  .flat-contact .tf-map .map-content {
+    width: 100%;
+    height: 450px;
+  }
+
+  #footer .widget-box {
+    display: block;
+  }
+  #footer .widget-box .widget-logo {
+    text-align: center;
+  }
+  #footer .widget-box .widget-contact .contact-box {
+    display: block;
+  }
+  #footer .widget-box .widget-contact .contact-box .icon-box {
+    width: 100%;
+    margin-bottom: 8px;
+    justify-content: center;
+  }
+  #footer .copy-right {
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .po-content-one {
+    order: 1;
+  }
+
+  .po-content-two {
+    order: 2;
+  }
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 440px) {
   .side-bar .widget .recent-news li {
     padding-bottom: 0px;
   }
 
-  .widget .recent-news {
-    margin-bottom: 66px;
+  .flat-contests .wrap-contests .check-box {
+    display: block;
+    text-align: center;
+  }
+  .flat-contests .wrap-contests .check-box .icon-check {
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .slider .slider-item .content .heading h1 {
+    font-size: 36px;
+    line-height: 46px;
+    margin-bottom: 18px;
   }
 }
 @media only screen and (max-width: 330px) {
@@ -138,6 +205,11 @@
   .widget .recent-news li .thumb {
     margin: 3px 10px 0px 0px;
     display: flow-root;
+  }
+
+  .slider .slider-item .content .heading h1 {
+    font-size: 32px;
+    line-height: 42px;
   }
 }
 
