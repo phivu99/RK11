@@ -13,6 +13,7 @@
 @import "magnific-popup.css";
 @import "swiper-bundle.min.css";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
 @import "bootstrap.css";
 /* Header
 -------------------------------------------------------------- */
@@ -1239,6 +1240,116 @@ Animations
   padding: 17px 32.5px 15px;
 }
 
+.flat-promotions-page {
+  padding-top: 235px;
+  padding-bottom: 133px;
+}
+.flat-promotions-page .heading-section h1 {
+  letter-spacing: 0.2px;
+  margin-bottom: 0;
+  margin-right: 60px;
+}
+.flat-promotions-page .sc-btn-button {
+  text-align: end;
+  margin-top: 39px;
+}
+.flat-promotions-page .sc-btn-button a {
+  padding: 20px 24px 16px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.1);
+}
+.flat-promotions-page .sc-btn-button a span {
+  font-family: "Source Sans Pro";
+  font-size: 16px;
+  font-weight: 700;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.flat-promotions-page .sc-btn-button a:hover {
+  background: linear-gradient(173.06deg, #E6902B -0.31%, #A91B3D 99.69%);
+}
+.flat-promotions-page .box-promotions .image img {
+  border-radius: 3px;
+}
+.flat-promotions-page .box-promotions .content {
+  margin-top: -146px;
+  padding: 0px 15px 35px 40px;
+  position: relative;
+}
+.flat-promotions-page .box-promotions .content h3 {
+  font-size: 32px;
+  line-height: 39px;
+  margin-bottom: 12px;
+}
+.flat-promotions-page .box-promotions .content p {
+  font-size: 13px;
+  line-height: 18px;
+}
+.flat-promotions-page .box-promotions:hover {
+  filter: hue-rotate(45deg);
+}
+.flat-promotions-page .box-promotions:hover.style {
+  filter: hue-rotate(315deg);
+}
+
+.flat-promotions-details {
+  padding-top: 277px;
+  padding-bottom: 172px;
+}
+.flat-promotions-details .wrap-details .heading-section {
+  margin-bottom: 29px;
+}
+.flat-promotions-details .wrap-details .heading-section h5 {
+  color: #F38535;
+  margin-bottom: 12px;
+}
+.flat-promotions-details .wrap-details .heading-section h2 {
+  font-size: 56px;
+  line-height: 64px;
+  margin-bottom: 24px;
+}
+.flat-promotions-details .wrap-details .heading-section p {
+  padding-right: 50px;
+}
+.flat-promotions-details .wrap-details .box-terms {
+  padding-right: 40px;
+  margin-bottom: 40px;
+}
+.flat-promotions-details .wrap-details .box-terms h3 {
+  margin-bottom: 15px;
+}
+.flat-promotions-details .wrap-details .box-terms p {
+  margin-bottom: 8px;
+}
+.flat-promotions-details .wrap-promotions {
+  padding: 61px 0 0 73px;
+}
+.flat-promotions-details .wrap-promotions .box {
+  background: linear-gradient(173.06deg, #E6902B -0.31%, #A91B3D 99.69%);
+  border-radius: 3px;
+}
+.flat-promotions-details .wrap-promotions .box .image {
+  width: 64%;
+  margin-top: -34px;
+  margin-left: -43px;
+  padding-bottom: 34px;
+}
+.flat-promotions-details .wrap-promotions .box .image img {
+  border-radius: 3px;
+}
+.flat-promotions-details .wrap-promotions .box .content {
+  width: 42%;
+  padding: 41px 31px;
+}
+.flat-promotions-details .wrap-promotions .box .content h3 {
+  font-size: 40px;
+  line-height: 48px;
+  margin-bottom: 23px;
+}
+
 /* Footer
 -------------------------------------------------------------- */
 #footer {
@@ -1787,8 +1898,6 @@ Animations
   z-index: 9;
 }
 
-.slider.home3 .swiper-pagination-bullet,
-.slider.home2 .swiper-pagination-bullet,
 .flat-themes .swiper-pagination-bullet,
 .flat-practice .swiper-pagination-bullet {
   width: 9px;
@@ -1798,8 +1907,6 @@ Animations
   margin: 0 10px !important;
   z-index: 99;
 }
-.slider.home3 .swiper-pagination-bullet::before,
-.slider.home2 .swiper-pagination-bullet::before,
 .flat-themes .swiper-pagination-bullet::before,
 .flat-practice .swiper-pagination-bullet::before {
   -webkit-transition: all 0.3s ease;
@@ -2680,7 +2787,7 @@ a:hover, a:focus {
 
 .link-style-2 a {
   text-decoration: none;
-  color: var(--primary-color6);
+  color: var(--primary-color2);
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -2688,7 +2795,7 @@ a:hover, a:focus {
   transition: all 0.3s ease;
 }
 .link-style-2 a:focus, .link-style-2 a:hover {
-  color: var(--primary-color3);
+  color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   outline: 0;
   -webkit-transition: all 0.3s ease;
@@ -2756,7 +2863,7 @@ a:hover, a:focus {
 }
 
 .text-color-5 {
-  color: #F6F6F6 !important;
+  color: rgba(255, 255, 255, 0.6) !important;
 }
 
 .text-color-6 {

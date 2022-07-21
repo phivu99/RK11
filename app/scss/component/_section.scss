@@ -609,3 +609,121 @@
     }
 }
 
+.flat-promotions-page {
+    padding-top: 235px;
+    padding-bottom: 133px;
+    .heading-section {
+        h1 {
+            letter-spacing: 0.2px;
+            margin-bottom: 0;
+            margin-right: 60px;
+            // padding: 0px 120px 0 60px;
+        }
+    }
+    .sc-btn-button {
+        text-align: end;
+        margin-top: 39px;
+        a {
+            padding: 20px 24px 16px;
+            border-radius: 4px;
+            background: $color-5;         
+            span {
+                font-family: 'Source Sans Pro';
+                font-size: 16px;
+                font-weight: 700;
+                @include transition3;
+            }
+            &:hover {
+                background: $bg-color; 
+            }
+        }
+    }
+    .box-promotions {
+        .image {
+            img {
+                border-radius: 3px;
+            }
+        }
+        .content {
+            margin-top: -146px;
+            padding: 0px 15px 35px 40px;
+            position: relative;
+            h3 {
+                font-size: 32px;
+                line-height: 39px;
+                margin-bottom: 12px;
+            }
+            p {
+                font-size: 13px;
+                line-height: 18px;
+            }
+        }
+        &:hover {
+            filter: hue-rotate(45deg);
+            &.style {
+                filter: hue-rotate(315deg);
+            }
+        }
+    }
+}
+
+.flat-promotions-details {
+    padding-top: 277px;
+    padding-bottom: 172px;
+    .wrap-details {
+        .heading-section {
+            margin-bottom: 29px;
+            h5 {
+                color: $color-3;
+                margin-bottom: 12px;
+            }
+            h2 {
+                font-size: 56px;
+                line-height: 64px;
+                margin-bottom: 24px;
+            }
+            p {
+                padding-right: 50px;
+            }
+        }
+        .box-terms {
+            padding-right: 40px;
+            margin-bottom: 40px;
+            h3 {
+                margin-bottom: 15px;
+            }
+            p {
+                margin-bottom: 8px;
+            }
+        }
+    }
+    .wrap-promotions {
+        padding: 61px 0 0 73px;
+       .box {
+            background: $bg-color;
+            border-radius: 3px;
+            .image {
+                width: 64%;
+                margin-top: -34px;
+                margin-left: -43px;
+                padding-bottom: 34px;
+                img {
+                    border-radius: 3px;
+                }
+            }
+            .content {
+                width: 42%;
+                padding: 41px 31px;
+                h3 {
+                    font-size: 40px;
+                    line-height: 48px;
+                    margin-bottom: 23px;
+                }
+            }
+       }
+        
+    }
+    
+}
+
+
