@@ -309,8 +309,12 @@
         }
       }
       .box-promotions .content {
-        margin-top: -146px;
-        padding: 0px 10px 35px 15px;
+        margin-top: -140px;
+        padding: 0px 0px 0px 10px;
+        h3 {
+          font-size: 28px;
+          line-height: 35px;
+        }
       }
     }
 
@@ -324,6 +328,59 @@
     .flat-promotions-details .wrap-promotions {
       padding: 61px 0 0 45px;
     }
+
+    .flat-contest-details {
+      padding: 150px 0 43px;
+      .title-sc {
+        margin-bottom: 50px;
+      }
+    }
+    .flat-contests-page .wrap-contests .box-contests.box-3 .style-2 .content {
+      padding: 0px 15px 0 15px;
+    }
+    .flat-contests-page .wrap-contests .box-contests.box-1 .content {
+      padding: 0px 15px 0 15px;
+      margin-top: -40px;
+    }
+    .flat-contests-page .wrap-contests .box-contests.box-3 .style-1 .content,
+    .flat-contests-page .wrap-contests .box-contests.box-2 .content {
+      padding: 0px 10px 0 10px;
+      
+  }
+  .flat-contests-page {
+    padding: 150px 0 55px;
+    .wrap-contests .box-contests .content {
+      margin-top: -30px;
+      h3 {
+        font-size: 20px;
+        line-height: 26px;
+      }
+      p {
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-word;
+      }
+    }
+  }
+
+  .flat-contests-page .box-list.list-3 {
+    padding: 0;
+  }
+
+  .flat-about {
+    padding: 160px 0 90px;
+    .bg-video {
+      margin: 0;
+      .img-video img {
+        margin-bottom: 20px;
+        margin-left: 15px; 
+        margin-top: -15px; 
+      }
+    }
+  }
 
 
     // .side-bar {
@@ -377,49 +434,49 @@
     }
 
     
-  .flat-outlets {
-    .show-boder {
-      padding-left: 10px;
-      padding-right: 10px;
-      margin-left: -10px;
-      margin-right: -10px;
-    }
-    .swiper-button-prev,
-    .swiper-button-next {
-      display: unset;
-      bottom: 50%;
-      width: 35px;
-      height: 35px;
-      line-height: 39px;
-      text-align: center;
-      background: #fff;
-      border-radius: 50%;
-      &::after {
-        color: #000;
-        font-size: 14px;
+    .flat-outlets {
+      .show-boder {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: -10px;
+        margin-right: -10px;
       }
-      &:hover {
-        background: #F38535;
+      .swiper-button-prev,
+      .swiper-button-next {
+        display: unset;
+        bottom: 50%;
+        width: 35px;
+        height: 35px;
+        line-height: 39px;
+        text-align: center;
+        background: #fff;
+        border-radius: 50%;
         &::after {
-          color: #fff;
+          color: #000;
+          font-size: 14px;
+        }
+        &:hover {
+          background: #F38535;
+          &::after {
+            color: #fff;
+          }
         }
       }
-    }
-    .swiper-button-prev {
-      left: 0px;
-      top: unset;
-      &::after {
-          font-size: 16px;
+      .swiper-button-prev {
+        left: 0px;
+        top: unset;
+        &::after {
+            font-size: 16px;
+        }
       }
-    }
-    .swiper-button-next {
-      right: 0px;
-      top: unset;
-      &::after {
-          font-size: 16px;
+      .swiper-button-next {
+        right: 0px;
+        top: unset;
+        &::after {
+            font-size: 16px;
+        }
       }
-    }
-  } 
+    } 
 
     .slider {
       .slider-item {
@@ -512,14 +569,6 @@
       max-height: calc(100% - 90px);
     }
 
-    // .flat-tabs .tab-title {
-    //   flex-wrap: wrap;
-    //   li {
-    //     margin-bottom: 3px;
-    //     padding-bottom: 0;
-    //   }
-    // }
-
     .flat-contests {
       .wrap-image {
         margin-bottom: 35px;
@@ -571,8 +620,6 @@
         justify-content: center;
       }
     }
-
-
 
     .flat-download {
       .wrap-download {
@@ -716,12 +763,14 @@
           img {
             height: 272px;
             width: 100%;
-            /* object-fit: contain; */
             object-fit: cover;
           }
         }
         .content {
           padding: 0px 10px 30px 15px;
+          h3 {
+            font-size: 28px;
+          }
         }
       }
       .sc-btn-button {
@@ -730,49 +779,142 @@
       }
     }
 
-    .flat-promotions-details .wrap-promotions {
-      padding: 0;
-      .box {
-        display: block;
-        padding: 15px;
-        .image {
-          width: 100%;
-          margin: 0 0 30px 0;
-          padding: 0;
-        }
-        .content {
-          width: 100%;
-          padding: 0;
-        }
-      }
-    }    
-
     .flat-promotions-details {
-      padding: 135px 0 65px;
-      .wrap-details .heading-section {
-        h2 {
-          font-size: 32px;
-          line-height: 42px;
+      padding: 135px 0 45px;
+      .wrap-details {
+        margin-bottom: 48px;
+        .heading-section {
+          h2 {
+            font-size: 32px;
+            line-height: 42px;
+            margin-bottom: 20px;
+          }
+          h5 {
+            font-weight: 600;
+          }
+        }
+        .sc-btn-button {
+          text-align: center;
+        }
+        .box-terms {
+          padding-right: 0px; 
+          margin-bottom: 35px;
+          h3 {
+            font-size: 21px;
+          }
+        }
+      }
+      .wrap-promotions {
+        padding: 0;
+        .box {
+          display: block;
+          padding: 15px 15px 30px;
+          .image {
+            width: 100%;
+            margin: 0 0 30px 0;
+            padding: 0;
+          }
+          .content {
+            width: 100%;
+            padding: 0;
+            h3 {
+              font-size: 26px;
+              line-height: 30px;
+              margin-bottom: 13px;
+            }
+          }
+        }
+      }   
+    }
+
+    .flat-contest-details {
+      padding: 135px 0 30px;
+      .title-sc {
+        margin-bottom: 40px;
+        font-size: 20px !important;
+        line-height: 26px;
+      }
+      .video-about .img-video {
+        img {
+          height: 272px;
+          object-fit: cover;
+        }
+      }
+      h3 {
+        font-size: 18px;
+        line-height: 24px;
+      }
+      .wrap-details {
+        .step-box ,
+        .title-details {
+          margin-bottom: 35px;
+        }
+        .box-terms h3 {
+          margin-bottom: 22px;
+        }
+      }
+    }
+
+    .flat-contests-page {
+      padding: 135px 0 16px;
+      .heading-section {
+        margin-bottom: 42px;
+        h1 {
+          font-size: 41px;
+          line-height: 51px;
+          margin-bottom: 16px;
+        }
+      }
+      .wrap-contests {
+        margin-bottom: 50px;
+        flex-wrap: wrap;
+        .box-contests {
+          &.box-1 {
+            width: 100%;
+          }
+          &.box-2 {
+            width: 35%;
+          }
+          &.box-3 {
+            width: 65%;
+          }
+        }
+      }
+      .box-list {
+        margin-bottom: 30px;
+        &.list-2 {
+          padding: 0;
+        }
+      }
+    }
+
+    .flat-about {
+      padding: 135px 0 75px;
+      .bg-video {
+        margin-bottom: 40px;
+        .img-video img {
           margin-bottom: 20px;
-        }
-        h5 {
-          font-weight: 600;
+          margin-left: 0px; 
+          margin-top: 20px; 
         }
       }
-      .sc-btn-button {
-        text-align: center;
+      .heading-section {
+        margin-bottom: 40px;
+      }
+      .book-now {
+        bottom: 25px;
       }
     }
-    .flat-promotions-details .wrap-details .box-terms h3 {
-      font-size: 21px;
-    }
-    .flat-promotions-details .wrap-details .box-terms {
-       padding-right: 0px; 
-      margin-bottom: 35px;
-    }
+    
+  }
 
-
-   
+  @media only screen and (max-width: 500px) {
+    .flat-contests-page .wrap-contests .box-contests.box-2 {
+      display: none;
+    }
+    .flat-contests-page .wrap-contests .box-contests.box-3 {
+      width: 100%;
+    }
   }
 
   @media only screen and (max-width: 440px) {
@@ -817,7 +959,6 @@
       }
     }
 
-
   .flat-download {
     .wrap-images {
       text-align: unset;
@@ -829,7 +970,6 @@
       }
     }
   }
-
 
 
   }
@@ -844,12 +984,7 @@
   }
 
   @media only screen and (max-width: 359px) {
-    // .thems-counter .wrap-one {
-    //   display: block;
-    // }
-    // .thems-counter .counter-box {
-    //   justify-content: center;
-    // }
+
     .thems-counter .counter-box .icon-counter {
       margin-right: 10px !important;
     }

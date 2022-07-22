@@ -279,8 +279,12 @@
     margin-bottom: 15px;
   }
   .flat-promotions-page .box-promotions .content {
-    margin-top: -146px;
-    padding: 0px 10px 35px 15px;
+    margin-top: -140px;
+    padding: 0px 0px 0px 10px;
+  }
+  .flat-promotions-page .box-promotions .content h3 {
+    font-size: 28px;
+    line-height: 35px;
   }
 
   .flat-promotions-details {
@@ -292,6 +296,62 @@
 
   .flat-promotions-details .wrap-promotions {
     padding: 61px 0 0 45px;
+  }
+
+  .flat-contest-details {
+    padding: 150px 0 43px;
+  }
+  .flat-contest-details .title-sc {
+    margin-bottom: 50px;
+  }
+
+  .flat-contests-page .wrap-contests .box-contests.box-3 .style-2 .content {
+    padding: 0px 15px 0 15px;
+  }
+
+  .flat-contests-page .wrap-contests .box-contests.box-1 .content {
+    padding: 0px 15px 0 15px;
+    margin-top: -40px;
+  }
+
+  .flat-contests-page .wrap-contests .box-contests.box-3 .style-1 .content,
+.flat-contests-page .wrap-contests .box-contests.box-2 .content {
+    padding: 0px 10px 0 10px;
+  }
+
+  .flat-contests-page {
+    padding: 150px 0 55px;
+  }
+  .flat-contests-page .wrap-contests .box-contests .content {
+    margin-top: -30px;
+  }
+  .flat-contests-page .wrap-contests .box-contests .content h3 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .flat-contests-page .wrap-contests .box-contests .content p {
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+  }
+
+  .flat-contests-page .box-list.list-3 {
+    padding: 0;
+  }
+
+  .flat-about {
+    padding: 160px 0 90px;
+  }
+  .flat-about .bg-video {
+    margin: 0;
+  }
+  .flat-about .bg-video .img-video img {
+    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-top: -15px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -624,23 +684,49 @@
   .flat-promotions-page .box-promotions .image img {
     height: 272px;
     width: 100%;
-    /* object-fit: contain; */
     object-fit: cover;
   }
   .flat-promotions-page .box-promotions .content {
     padding: 0px 10px 30px 15px;
+  }
+  .flat-promotions-page .box-promotions .content h3 {
+    font-size: 28px;
   }
   .flat-promotions-page .sc-btn-button {
     text-align: center;
     margin-top: 35px;
   }
 
+  .flat-promotions-details {
+    padding: 135px 0 45px;
+  }
+  .flat-promotions-details .wrap-details {
+    margin-bottom: 48px;
+  }
+  .flat-promotions-details .wrap-details .heading-section h2 {
+    font-size: 32px;
+    line-height: 42px;
+    margin-bottom: 20px;
+  }
+  .flat-promotions-details .wrap-details .heading-section h5 {
+    font-weight: 600;
+  }
+  .flat-promotions-details .wrap-details .sc-btn-button {
+    text-align: center;
+  }
+  .flat-promotions-details .wrap-details .box-terms {
+    padding-right: 0px;
+    margin-bottom: 35px;
+  }
+  .flat-promotions-details .wrap-details .box-terms h3 {
+    font-size: 21px;
+  }
   .flat-promotions-details .wrap-promotions {
     padding: 0;
   }
   .flat-promotions-details .wrap-promotions .box {
     display: block;
-    padding: 15px;
+    padding: 15px 15px 30px;
   }
   .flat-promotions-details .wrap-promotions .box .image {
     width: 100%;
@@ -651,29 +737,92 @@
     width: 100%;
     padding: 0;
   }
-
-  .flat-promotions-details {
-    padding: 135px 0 65px;
-  }
-  .flat-promotions-details .wrap-details .heading-section h2 {
-    font-size: 32px;
-    line-height: 42px;
-    margin-bottom: 20px;
-  }
-  .flat-promotions-details .wrap-details .heading-section h5 {
-    font-weight: 600;
-  }
-  .flat-promotions-details .sc-btn-button {
-    text-align: center;
+  .flat-promotions-details .wrap-promotions .box .content h3 {
+    font-size: 26px;
+    line-height: 30px;
+    margin-bottom: 13px;
   }
 
-  .flat-promotions-details .wrap-details .box-terms h3 {
-    font-size: 21px;
+  .flat-contest-details {
+    padding: 135px 0 30px;
   }
-
-  .flat-promotions-details .wrap-details .box-terms {
-    padding-right: 0px;
+  .flat-contest-details .title-sc {
+    margin-bottom: 40px;
+    font-size: 20px !important;
+    line-height: 26px;
+  }
+  .flat-contest-details .video-about .img-video img {
+    height: 272px;
+    object-fit: cover;
+  }
+  .flat-contest-details h3 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .flat-contest-details .wrap-details .step-box,
+.flat-contest-details .wrap-details .title-details {
     margin-bottom: 35px;
+  }
+  .flat-contest-details .wrap-details .box-terms h3 {
+    margin-bottom: 22px;
+  }
+
+  .flat-contests-page {
+    padding: 135px 0 16px;
+  }
+  .flat-contests-page .heading-section {
+    margin-bottom: 42px;
+  }
+  .flat-contests-page .heading-section h1 {
+    font-size: 41px;
+    line-height: 51px;
+    margin-bottom: 16px;
+  }
+  .flat-contests-page .wrap-contests {
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+  }
+  .flat-contests-page .wrap-contests .box-contests.box-1 {
+    width: 100%;
+  }
+  .flat-contests-page .wrap-contests .box-contests.box-2 {
+    width: 35%;
+  }
+  .flat-contests-page .wrap-contests .box-contests.box-3 {
+    width: 65%;
+  }
+  .flat-contests-page .box-list {
+    margin-bottom: 30px;
+  }
+  .flat-contests-page .box-list.list-2 {
+    padding: 0;
+  }
+
+  .flat-about {
+    padding: 135px 0 75px;
+  }
+  .flat-about .bg-video {
+    margin-bottom: 40px;
+  }
+  .flat-about .bg-video .img-video img {
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+  .flat-about .heading-section {
+    margin-bottom: 40px;
+  }
+  .flat-about .book-now {
+    bottom: 25px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .flat-contests-page .wrap-contests .box-contests.box-2 {
+    display: none;
+  }
+
+  .flat-contests-page .wrap-contests .box-contests.box-3 {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 440px) {

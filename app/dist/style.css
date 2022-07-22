@@ -680,7 +680,11 @@ h6 {
 }
 
 .fs-12 {
-  font-size: 12;
+  font-size: 12px;
+}
+
+.fw-4 {
+  font-weight: 400;
 }
 
 .fw-6 {
@@ -765,6 +769,10 @@ label.error {
   position: relative;
 }
 
+.overflow {
+  overflow: hidden;
+}
+
 .j-content {
   justify-content: center;
 }
@@ -825,7 +833,7 @@ a {
   transition: all 0.3s ease;
 }
 a:hover, a:focus {
-  color: var(--primary-color2);
+  color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   outline: 0;
   -webkit-transition: all 0.3s ease;
@@ -936,7 +944,7 @@ a:hover, a:focus {
 }
 
 .text-color-3 {
-  color: #6001D3 !important;
+  color: #F38535 !important;
 }
 
 .text-color-4 {
@@ -948,7 +956,7 @@ a:hover, a:focus {
 }
 
 .text-color-6 {
-  color: #9C99AE !important;
+  color: rgba(255, 255, 255, 0.5) !important;
 }
 
 .text-color-7 {
@@ -1239,7 +1247,7 @@ a:hover, a:focus {
 }
 @-webkit-keyframes textColour {
   0% {
-    color: #DD5141;
+    color: #F38535;
   }
   100% {
     color: #fff;
@@ -1247,7 +1255,7 @@ a:hover, a:focus {
 }
 @-moz-keyframes textColour {
   0% {
-    color: #DD5141;
+    color: #F38535;
   }
   100% {
     color: #fff;
@@ -1255,7 +1263,7 @@ a:hover, a:focus {
 }
 @-o-keyframes textColour {
   0% {
-    color: #DD5141;
+    color: #F38535;
   }
   100% {
     color: #fff;
@@ -1263,7 +1271,7 @@ a:hover, a:focus {
 }
 @keyframes textColour {
   0% {
-    color: #DD5141;
+    color: #F38535;
   }
   100% {
     color: #fff;
@@ -1280,7 +1288,7 @@ a:hover, a:focus {
   transform: translate(-51%, -50%);
   width: 240px;
   height: 240px;
-  border: 5px solid #DD5141;
+  border: 5px solid #F38535;
   border-radius: 120px;
   box-sizing: border-box;
 }
@@ -1320,7 +1328,7 @@ a:hover, a:focus {
   height: 200px;
   color: #888;
   text-align: center;
-  border: 5px solid #e98c82;
+  border: 5px solid #f6a265;
   border-radius: 100px;
   box-sizing: border-box;
   z-index: 20;
@@ -1369,7 +1377,7 @@ a:hover, a:focus {
   width: 140px;
   height: 140px;
   text-align: center;
-  border: 5px solid #f0b4ad;
+  border: 5px solid #f9bf95;
   border-radius: 70px;
   box-sizing: border-box;
   z-index: 20;
