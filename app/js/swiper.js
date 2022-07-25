@@ -52,6 +52,39 @@ var swiper =  new Swiper(".carousel", {
     },
 });
 
+var swiper =  new Swiper(".carousel-1", {
+    // autoplay: {
+    //     delay: 5000,
+    //     disableOnInteraction: false,
+    //     },
+    loop:false,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    navigation: {
+        clickable: true,
+        nextEl: ".swiper-button-next2",
+        prevEl: ".swiper-button-prev2",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+        },
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+        1300: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+    },
+});
+
 var swiper =  new Swiper(".carousel-3", {
     autoplay: {
         delay: 6000,

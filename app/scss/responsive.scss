@@ -42,6 +42,23 @@
         right: 42.2%;
       }
     }
+    .flat-events-page {
+      .swiper-button-prev2 {
+        left: 43.3%;
+      }
+      .swiper-button-prev2 {
+        right: 43.3%;
+      }
+    }
+
+    .flat-career .box-career.box-1 {
+      margin-left: 100px;
+      margin-right: 0px;
+    }
+    .flat-career .box-career.box-2 {
+      margin-right: 94px;
+      margin-left: 13px;
+    }
   }
 
   @media only screen and (max-width: 1199px) {
@@ -119,6 +136,36 @@
       }
       .image {
         width: 60%;
+      }
+    }
+
+    .flat-career .box-career.box-1 {
+      margin-left: 0px;
+      margin-right: 5px;
+    }
+    .flat-career .box-career.box-2 {
+      margin-right: 0px;
+      margin-left: 5px;
+    }
+
+    .flat-events-details {
+      .wrap-details {
+        padding: 0;
+        margin-bottom: 55px;
+      }
+      .heading-section2 {
+        padding: 0;
+        margin-bottom: 55px;
+        h2 {
+          padding: 0;
+        }
+        &.style {
+          padding: 0;
+          margin-bottom: 0;
+        }
+      }
+      .images {
+        margin-bottom: 55px;
       }
     }
 
@@ -382,6 +429,47 @@
     }
   }
 
+  .flat-career {
+    padding: 150px 0 35px;
+    .heading-section {
+      margin-bottom: 60px;
+    }
+    .box-career {
+      padding: 40px;
+    }
+  }
+
+  .flat-events-page {
+    padding: 150px 0 55px;
+    .swiper-container {
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-left: -15px;
+      margin-right: -15px;
+      padding-bottom: 0;
+    }
+    .swiper-button-next2, 
+    .swiper-button-prev2 {
+      bottom: 50%;
+    }
+    .swiper-button-next2 {
+      right: 5px;
+    }
+    .swiper-button-prev2 {
+      left: 5px;
+    }
+  }
+
+  .flat-events-details {
+    padding: 150px 0 55px;
+    .wrap-details {
+      margin-bottom: 55px;
+    }
+    .images {
+      margin-bottom: 35px;
+    }
+  }
+
 
     // .side-bar {
     //   margin-top: 60px;
@@ -413,11 +501,11 @@
     .nav {
       width: 240px;
       right: -350px;
-      padding: 80px 25px;
+      padding: 80px 15px 80px 25px;
       ul > li > a { 
         font-size: 18px;
-        line-height: 48px;
-        padding: 0 15px;
+        line-height: 28px;
+        padding: 10px 15px;
       }
     }
 
@@ -665,11 +753,17 @@
     }
 
     .po-content-one {
-        order: 1;
+      order: 1;
     }
     .po-content-two {
-        order: 2;
+      order: 2;
     }
+    .po-content-three {
+      order: 3;
+    }
+    .po-content-four {
+      order: 4;
+    } 
 
     .flat-event {
       .wrap-event {
@@ -905,6 +999,83 @@
         bottom: 25px;
       }
     }
+ 
+    .flat-career {
+      padding: 135px 0 16px;
+      .heading-section {
+        margin-bottom: 50px;
+        text-align: unset;
+        h1 {
+          font-size: 41px;
+          line-height: 51px;
+          margin-bottom: 16px;
+        }
+      }
+      .box-career {
+        margin-bottom: 30px;
+        padding: 40px 15px;
+        &.box-1 {
+          margin-right: 0px;
+        }
+        &.box-2 {
+          margin-left: 0;
+        }
+        .icon {
+          margin-bottom: 23px;
+        }
+        .content {
+          h3 {
+            font-size: 22px;
+            line-height: 28px;
+          }
+        }
+      }
+    }
+
+    .flat-events-page {
+      padding: 135px 0 40px;
+      .heading-section {
+        margin-bottom: 50px;
+        h1 {
+          font-size: 41px;
+          line-height: 51px;
+          margin-bottom: 16px;
+        }
+      }
+      .swiper-button-next2,
+      .swiper-button-prev2 {
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+      }
+      .wrap-events .content {
+        padding: 30px 15px;
+        h3 {
+          font-size: 22px;
+          line-height: 28px;
+          margin-bottom: 12px;
+        }
+        p {
+          font-size: 14px !important;
+        }
+      }
+    }
+
+    .flat-events-details {
+      padding: 135px 0 35px;
+      .heading-section2 {
+        margin-bottom: 50px;
+        h2 {
+          font-size: 32px;
+          line-height: 42px;
+          margin-bottom: 20px;
+        }
+      }
+      .image {
+        margin-bottom: 35px;
+      }
+    }
+    
     
   }
 

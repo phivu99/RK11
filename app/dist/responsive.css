@@ -36,6 +36,23 @@
   .flat-outlets .swiper-button-next {
     right: 42.2%;
   }
+
+  .flat-events-page .swiper-button-prev2 {
+    left: 43.3%;
+  }
+  .flat-events-page .swiper-button-prev2 {
+    right: 43.3%;
+  }
+
+  .flat-career .box-career.box-1 {
+    margin-left: 100px;
+    margin-right: 0px;
+  }
+
+  .flat-career .box-career.box-2 {
+    margin-right: 94px;
+    margin-left: 13px;
+  }
 }
 @media only screen and (max-width: 1199px) {
   .header_1 #main-nav {
@@ -105,6 +122,35 @@
   }
   .flat-promotions-details .wrap-promotions .box .image {
     width: 60%;
+  }
+
+  .flat-career .box-career.box-1 {
+    margin-left: 0px;
+    margin-right: 5px;
+  }
+
+  .flat-career .box-career.box-2 {
+    margin-right: 0px;
+    margin-left: 5px;
+  }
+
+  .flat-events-details .wrap-details {
+    padding: 0;
+    margin-bottom: 55px;
+  }
+  .flat-events-details .heading-section2 {
+    padding: 0;
+    margin-bottom: 55px;
+  }
+  .flat-events-details .heading-section2 h2 {
+    padding: 0;
+  }
+  .flat-events-details .heading-section2.style {
+    padding: 0;
+    margin-bottom: 0;
+  }
+  .flat-events-details .images {
+    margin-bottom: 55px;
   }
 }
 @media only screen and (max-width: 991px) {
@@ -353,6 +399,47 @@
     margin-left: 15px;
     margin-top: -15px;
   }
+
+  .flat-career {
+    padding: 150px 0 35px;
+  }
+  .flat-career .heading-section {
+    margin-bottom: 60px;
+  }
+  .flat-career .box-career {
+    padding: 40px;
+  }
+
+  .flat-events-page {
+    padding: 150px 0 55px;
+  }
+  .flat-events-page .swiper-container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-bottom: 0;
+  }
+  .flat-events-page .swiper-button-next2,
+.flat-events-page .swiper-button-prev2 {
+    bottom: 50%;
+  }
+  .flat-events-page .swiper-button-next2 {
+    right: 5px;
+  }
+  .flat-events-page .swiper-button-prev2 {
+    left: 5px;
+  }
+
+  .flat-events-details {
+    padding: 150px 0 55px;
+  }
+  .flat-events-details .wrap-details {
+    margin-bottom: 55px;
+  }
+  .flat-events-details .images {
+    margin-bottom: 35px;
+  }
 }
 @media only screen and (max-width: 767px) {
   .tf-section2,
@@ -363,12 +450,12 @@
   .nav {
     width: 240px;
     right: -350px;
-    padding: 80px 25px;
+    padding: 80px 15px 80px 25px;
   }
   .nav ul > li > a {
     font-size: 18px;
-    line-height: 48px;
-    padding: 0 15px;
+    line-height: 28px;
+    padding: 10px 15px;
   }
 
   .mark-1 {
@@ -597,6 +684,14 @@
     order: 2;
   }
 
+  .po-content-three {
+    order: 3;
+  }
+
+  .po-content-four {
+    order: 4;
+  }
+
   .flat-event .wrap-event {
     padding: 60px 15px;
     display: block;
@@ -814,6 +909,80 @@
   }
   .flat-about .book-now {
     bottom: 25px;
+  }
+
+  .flat-career {
+    padding: 135px 0 16px;
+  }
+  .flat-career .heading-section {
+    margin-bottom: 50px;
+    text-align: unset;
+  }
+  .flat-career .heading-section h1 {
+    font-size: 41px;
+    line-height: 51px;
+    margin-bottom: 16px;
+  }
+  .flat-career .box-career {
+    margin-bottom: 30px;
+    padding: 40px 15px;
+  }
+  .flat-career .box-career.box-1 {
+    margin-right: 0px;
+  }
+  .flat-career .box-career.box-2 {
+    margin-left: 0;
+  }
+  .flat-career .box-career .icon {
+    margin-bottom: 23px;
+  }
+  .flat-career .box-career .content h3 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .flat-events-page {
+    padding: 135px 0 40px;
+  }
+  .flat-events-page .heading-section {
+    margin-bottom: 50px;
+  }
+  .flat-events-page .heading-section h1 {
+    font-size: 41px;
+    line-height: 51px;
+    margin-bottom: 16px;
+  }
+  .flat-events-page .swiper-button-next2,
+.flat-events-page .swiper-button-prev2 {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+  }
+  .flat-events-page .wrap-events .content {
+    padding: 30px 15px;
+  }
+  .flat-events-page .wrap-events .content h3 {
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 12px;
+  }
+  .flat-events-page .wrap-events .content p {
+    font-size: 14px !important;
+  }
+
+  .flat-events-details {
+    padding: 135px 0 35px;
+  }
+  .flat-events-details .heading-section2 {
+    margin-bottom: 50px;
+  }
+  .flat-events-details .heading-section2 h2 {
+    font-size: 32px;
+    line-height: 42px;
+    margin-bottom: 20px;
+  }
+  .flat-events-details .image {
+    margin-bottom: 35px;
   }
 }
 @media only screen and (max-width: 500px) {

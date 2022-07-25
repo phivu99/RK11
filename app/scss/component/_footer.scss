@@ -5,9 +5,14 @@
 -------------------------------------------------------------- */
 
 #footer {
-    padding: 0px 0 25px;
+    padding: 0px 0 3px;
     position: relative;
- 
+    &.home {
+        padding: 0px 0 25px;
+        .copy-right {
+            margin-right: -6px;
+        }
+    }
 }
 
 
@@ -48,7 +53,7 @@
 
 .copy-right {
     text-align: end;
-    margin-right: -6px;
+    margin-right: 0px;
     margin-top: 26px;
     color: #C3C2D1 !important;
 }
