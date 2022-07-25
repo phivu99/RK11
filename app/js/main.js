@@ -236,6 +236,16 @@
         //   $(".menu-item-has-children").removeAttr("style");
         });
       };
+      $(document).on("click", ".nav", function () {
+        $(this).toggleClass("active");
+        
+        $("#main-nav-mobi").slideToggle();
+      //   $(".menu-item-has-children").removeAttr("style")
+      });
+      $(document).on("click", ".menu-item-has-children .arrow", function () {
+        $(this).toggleClass("active").next().slideToggle();
+      //   $(".menu-item-has-children").removeAttr("style");
+      });
     var ajaxSubscribe = {
         obj: {
             subscribeEmail: $('#subscribe-email'),

@@ -10,7 +10,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <link rel="stylesheet" href="app/dist/font-awesome.css">
-    
     <link rel="stylesheet" href="app/dist/app.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome.css">
     <link rel="stylesheet" href="app/dist/responsive.css">
@@ -79,13 +78,8 @@
                         <div class="nav-wrapper">
                             <nav>
                                 <ul id="menu-primary-menuu" class="menuu">
-                                    <li class="menu-item current-menu-item menu-item-has-children ">
+                                    <li class="menu-item current-menu-item ">
                                         <a href="index.html">Home</a>
-                                        <span class="arrow"></span>
-                                        <ul class="sub-menu">
-                                            <li class="menu-item"><a href="index.html">Home V1</a></li>
-                                            <li class="menu-item "><a href="home2.html">Home V2</a></li>
-                                        </ul>
                                     </li>                                                                                                        
                                     <!-- current-item -->
                                     <li class="menu-item ">
@@ -93,15 +87,20 @@
                                     </li>
 
                                     <li class="menu-item">
-                                        <a data-scroll href="service"> Price & Outlets </a>
+                                        <a data-scroll href="#service"> Price & Outlets </a>
                                     </li>
 
-                                    <li class="menu-item ">
-                                        <a data-scroll href="promotions.html"> Promotions</a>                                       
-                                    </li>
+                                    <li class="menu-item menu-item-has-children">
+                                        <a data-scroll href="promotions.html"> Promotions</a>
+                                        <span class="arrow"></span>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item"><a href="promotions.html">Promotions</a></li>
+                                            <li class="menu-item "><a href="promotions-details.html">Promotions Details</a></li>
+                                        </ul>                                       
+                                    </li> 
 
                                     <li class="menu-item ">
-                                        <a data-scroll href="#projects">  contests</a>                                       
+                                        <a data-scroll href="contests.html">  contests</a>                                       
                                     </li>
 
                                     <li class="menu-item ">
