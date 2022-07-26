@@ -712,6 +712,13 @@ h6 {
     font-weight: 700;
 }
 
+.font-13 {
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    color: $color-6;
+}
+
 .msg-success {
     background: linear-gradient(to right, #E250E5, #4B50E6, #E250E5);
     background-clip: text;
@@ -910,11 +917,11 @@ a {
 
 .link-style-4 a {
     text-decoration: none;
-    color: var(--primary-color2);
+    color: rgba(255,255,255,0.6);
     @include transition3;
     &:focus,
     &:hover {
-        color: var(--primary-color);
+        color: var(--primary-color2);
         text-decoration: none;
         outline: 0;
         @include transition3;
@@ -1356,6 +1363,44 @@ a {
     }
 }
 
+
+// swiper pagination slider
+.flat-themes .swiper-pagination,
+.flat-outlets .swiper-pagination {
+    width: 100%;
+    margin-top: 43px;
+    position: relative;
+    bottom: 0 !important; 
+}
+.flat-outlets .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    border: 1px solid $color-1;
+    opacity: 1;
+    margin: 0 8px !important;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    width: 8px;
+    height: 8px;
+    background: $color-1;
+    opacity: 1;
+    z-index: 99;
+    // margin: 0 12px !important;
+    &::before {
+        @include transition3;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        border-radius: 50%;
+        content: "";
+        width : 17px;
+        height: 17px;
+        border: 1px solid $color-1;
+        overflow: visible;
+    }
+}
+
 /* side bar */
 .side-bar {
     .widget {
@@ -1540,116 +1585,6 @@ a {
     }
 }
 
-
-// swiper pagination slider
-.flat-themes .swiper-pagination,
-.flat-outlets .swiper-pagination {
-    width: 100%;
-    margin-top: 43px;
-    position: relative;
-    bottom: 0 !important; 
-}
-.flat-outlets .swiper-pagination-bullet {
-    width: 8px;
-    height: 8px;
-    border: 1px solid $color-1;
-    opacity: 1;
-    margin: 0 8px !important;
-}
-
-.swiper-pagination-bullet.swiper-pagination-bullet-active {
-    width: 8px;
-    height: 8px;
-    background: $color-1;
-    opacity: 1;
-    z-index: 99;
-    // margin: 0 12px !important;
-    &::before {
-        @include transition3;
-        position: absolute;
-        transform: translate(-50%, -50%);
-        top: 50%;
-        border-radius: 50%;
-        content: "";
-        width : 17px;
-        height: 17px;
-        border: 1px solid $color-1;
-        overflow: visible;
-    }
-}
-
-/* donat progress */
-.progress-bar {
-    margin: 16px 0 46px;
-    h4 {
-        font-size: 18px;
-        .progress-number {
-            font-weight: 400;
-        }
-    }
-}
-
-.progress-title-holder {
-    padding-bottom: 12px;
-    position: relative;
-}
-
-.progress-content-outter {
-    height: 12px;
-    background-color: rgb(8,4,34,0.1);
-    border-radius: 5px;
-}
-
-.progress-content {
-    height: 12px;
-    background-color: var(--primary-color3);
-    width: 0%;
-    border-radius: 40px;
-    &.style-1 {
-        background-color: #3D88FB;
-    }
-    &.style-2 {
-        background-color: #5637C8;
-    }
-    &.style-3 {
-        background-color: #00D199;
-    }
-    &.style-4 {
-        background-color: #C87B07;
-    }
-    &.style-5 {
-        background-color: #A92535;
-    }
-    &.style-6 {
-        background-color: #9116CD;
-    }
-}
-
-.progress-number-mark {
-    margin-bottom: 4px;
-    position: relative;
-    top: 1px;
-    -moz-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-}
-
-.flat-skill.home2 {
-    .progress-bar {
-        span {
-            color: var(--primary-color);
-        }
-        .progress-content {
-            background-color: $color-h2;
-        }
-        .progress-content-outter {
-            background-color: rgba(255,255,255,0.1);
-        }
-    }
-}
-
 // heading 
 .heading-section {
     margin-bottom: 48px;
@@ -1658,5 +1593,12 @@ a {
         text-transform: capitalize;
         
     }
+    .title-69 {
+        font-size: 69px;
+        letter-spacing: -3px;
+        margin-bottom: 27px;
+    }
 }
+
+
 

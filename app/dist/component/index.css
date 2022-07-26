@@ -1596,11 +1596,11 @@ Animations
 }
 .flat-career .box-career .icon {
   margin-bottom: 33px;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   animation: swing ease-in-out 0s infinite alternate;
 }
 .flat-career .box-career .content .title-one {
@@ -1610,17 +1610,178 @@ Animations
   margin-bottom: 19px;
 }
 .flat-career .box-career:hover .icon {
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   animation: swing ease-in-out 1s infinite alternate;
 }
 
 .flat-contact-page {
   padding-top: 185px;
-  padding-bottom: 40px;
+  padding-bottom: 155px;
+}
+.flat-contact-page .heading-section {
+  margin-bottom: 60px;
+}
+.flat-contact-page .tf-map {
+  margin-bottom: 41px;
+}
+.flat-contact-page .tf-map .map-content {
+  width: 100%;
+  height: 641px;
+  border-radius: 10px;
+}
+.flat-contact-page .box-contact.box-1 {
+  padding-right: 50px;
+}
+.flat-contact-page .box-contact.box-2 {
+  padding-left: 28px;
+}
+.flat-contact-page .box-contact.box-3 {
+  padding-left: 65px;
+}
+.flat-contact-page .box-contact.box-4 {
+  padding-left: 62px;
+}
+.flat-contact-page .box-contact h3 {
+  margin-bottom: 14px;
+}
+.flat-contact-page .box-contact p {
+  margin-bottom: 8px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.flat-contact-page .box-contact .phone {
+  margin-bottom: 6px;
+}
+.flat-contact-page .box-contact .email {
+  margin-bottom: 19px;
+}
+.flat-contact-page .box-contact .button-map {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  display: inline-block;
+  transition: color 0.4s linear;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #F38535;
+  color: #F38535;
+  background: transparent;
+  border-radius: 12px;
+  padding: 10px 25px 10px 27px;
+}
+.flat-contact-page .box-contact .button-map::before {
+  content: "\f3c5";
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 200;
+  font-size: 16px;
+  margin-right: 14px;
+}
+.flat-contact-page .box-contact .button-map:hover {
+  background: linear-gradient(173.06deg, #E6902B -0.31%, #A91B3D 99.69%);
+  color: #fff;
+  border: 0px solid transparent;
+  transition: all 0s ease;
+  padding: 11px 26px 11px 28px;
+}
+
+.flat-contact-send {
+  padding-bottom: 67px;
+}
+.flat-contact-send .images {
+  padding-left: 67px;
+  position: relative;
+}
+.flat-contact-send .images img {
+  border-radius: 50%;
+}
+.flat-contact-send .mark-img {
+  position: absolute;
+  top: -11px;
+  animation: swing2 ease-in-out 5s infinite alternate;
+}
+@keyframes swing2 {
+  0% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(15deg);
+  }
+}
+.flat-contact-send #comments .title-comment {
+  margin-bottom: 36px;
+}
+.flat-contact-send #comments .title-comment h2 {
+  letter-spacing: -0.5px;
+  margin-bottom: 16px;
+}
+.flat-contact-send #comments .comment-form fieldset {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 24px;
+}
+.flat-contact-send #comments .comment-form fieldset input {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 0px solid transparent;
+  padding: 10px 15px 10px 13px;
+  border-radius: 8px;
+}
+.flat-contact-send #comments .comment-form fieldset input::placeholder {
+  color: #818089;
+  line-height: 24px;
+  font-size: 16px;
+}
+.flat-contact-send #comments .comment-form fieldset.style-1 {
+  padding-right: 15px;
+}
+.flat-contact-send #comments .comment-form fieldset.style-2 {
+  padding-left: 15px;
+}
+.flat-contact-send #comments .comment-form textarea {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 0px solid transparent;
+  padding: 12px 15px 31px 13px;
+  border-radius: 8px;
+}
+.flat-contact-send #comments .comment-form textarea::placeholder {
+  color: #818089;
+  line-height: 24px;
+  font-size: 16px;
+}
+.flat-contact-send #comments .comment-form .button {
+  margin-top: 18px;
+  padding: 12px 27.5px 12px;
+  border-radius: 10px;
+}
+.flat-contact-send #comments .comment-form .button span {
+  text-transform: unset;
+  font-size: 16px;
+}
+
+.flat-price-outlets {
+  padding-top: 156px;
+  padding-bottom: 150px;
+}
+.flat-price-outlets .post .post-about h3 {
+  margin-bottom: 25px;
+}
+.flat-price-outlets .post .post-about .icon {
+  width: 48px;
+  height: 48px;
+  line-height: 46px;
+  text-align: center;
+  background: rgba(246, 246, 246, 0.1);
+  border-radius: 50%;
+  margin-right: 17px;
+}
+.flat-price-outlets .post .post-about .content h6 {
+  margin-bottom: 6px;
 }
 
 /* Footer
