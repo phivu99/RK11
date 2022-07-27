@@ -1785,10 +1785,16 @@ Animations
   padding-top: 156px;
   padding-bottom: 150px;
 }
+.flat-price-outlets .post .post-about {
+  margin-bottom: 61px;
+}
 .flat-price-outlets .post .post-about h3 {
   margin-bottom: 25px;
 }
-.flat-price-outlets .post .post-about .icon {
+.flat-price-outlets .post .post-about .box-about.box-1 {
+  margin-right: 70px;
+}
+.flat-price-outlets .post .post-about .box-about .icon {
   width: 48px;
   height: 48px;
   line-height: 46px;
@@ -1797,8 +1803,15 @@ Animations
   border-radius: 50%;
   margin-right: 17px;
 }
-.flat-price-outlets .post .post-about .content h6 {
+.flat-price-outlets .post .post-about .box-about .content h6 {
   margin-bottom: 6px;
+}
+.flat-price-outlets .post .post-about .box-about .inner {
+  margin-bottom: 21px;
+}
+.flat-price-outlets .post .post-about .text-1 {
+  margin-top: 3px;
+  padding-right: 40px;
 }
 
 /* Footer
