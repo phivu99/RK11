@@ -1170,6 +1170,7 @@
     padding-top: 156px;
     padding-bottom: 150px;
     .post {
+        padding-right: 29px;
         .post-about {
             margin-bottom: 61px;
             h3 {
@@ -1199,10 +1200,325 @@
             }
             .text-1 {
                 margin-top: 3px;
-                padding-right: 40px;
+            }
+        }
+        .post-packages {
+            margin-bottom: 61px;
+            h3 {
+                margin-bottom: 15px;
+            }
+            .wrap {
+                margin-left: -30px;
+                .box {
+                    width: calc(33.3333% - 30px);
+                    background: rgba(39, 31, 36, 0.7);
+                    border: 1px solid rgba(238, 238, 238, 0.1);
+                    box-shadow: 0px 8px 25px rgba(57, 76, 98, 0.12);
+                    border-radius: 16px;
+                    padding: 23px 23px;
+                    margin-left: 30px;
+                    position: relative;
+                    @include transition3;
+                    transition: color 0.4s linear;
+                    overflow: hidden;
+                    .icon {
+                        width: 48px;
+                        height: 48px;
+                        line-height: 46px;
+                        text-align: center;
+                        background: $bg-color;
+                        border-radius: 50%;
+                        margin-bottom: 19px;
+                        @include transition3;
+                    }
+                    h4 {
+                        margin-bottom: 10px;
+                    }
+                    .sale {
+                        position: absolute;
+                        right: 19px;
+                        top: 19px;
+                        font-weight: 600;
+                        font-size: 10px;
+                        line-height: 12px;
+                        background: $bg-color;
+                        padding: 8px 12px;
+                        border-radius: 8px;
+                        @include transition3;
+                    }
+                    &.active,
+                    &:focus,
+                    &:hover {
+                        background: $bg-color;
+                        border: 0px solid transparent;
+                        transition: all 0s ease;
+                        padding: 24px;
+                        .icon {
+                            background: rgba(255, 255, 255, 0.2);
+                        }
+                        .sale {
+                            background: rgba(255, 255, 255, 0.2);
+                        }
+                    }
+                }
+            }
+        }
+        .post-orders {
+            margin-bottom: 61px;
+            h3 {
+                margin-bottom: 23px;
+            }
+            .wrap-orders {
+                margin-left: -30px;
+                .box-orders {   
+                    width: calc(50% - 30px);
+                    background: rgba(39, 31, 36, 0.7);
+                    border: 1px solid rgba(238, 238, 238, 0.1);
+                    margin-left: 30px;
+                    padding: 27px 7px 7px 0px;
+                    border-radius: 16px;
+                    height: 524px;
+                    h4 {
+                        margin-bottom: 6px;
+                    }
+                }
             }
         }
     }
 }
+
+.food {
+    height: 465px;
+    overflow: auto;
+    // &::-webkit-scrollbar-button {
+    //     margin-left: 22px;
+    //     float: left;
+    //     height: 100px;
+    //     width: 5px;
+    //     background: #df1111;
+    //     overflow-y: scroll;
+    //     margin-bottom: 25px;
+    // }
+    // &::-webkit-scrollbar {
+    //     margin-left: 22px;
+    //         float: left;
+    //         height: 100px;
+    //         width: 5px;
+    //         background: #df1111;
+    //         overflow-y: scroll;
+    //         margin-bottom: 25px;
+    // }
+    // &::-webkit-scrollbar-thumb {
+    //     border-radius: 10px;
+    //     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    //     background-color: #D62929;
+    // }
+
+    &::-webkit-scrollbar {
+        width: 6px;
+        height: 100px;
+        padding-right: 10px;
+    }
+     
+    /* Track */
+    &::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+    }
+     
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        background: #4F494D; 
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    }
+    
+    // &::-webkit-scrollbar-thumb:window-inactive {
+    //     background: rgba(255,0,0,0.4); 
+    // }
+    .wrap-food {
+        padding: 0px 14px 0px 19px;
+        @include transition3;
+        &:hover {
+            background-color:  #2D272C;
+        }
+    }
+    .wrap-food:last-child .food-box {
+        border-bottom: 0;
+    }
+    .food-box {
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(238, 238, 238, 0.1);
+        padding: 16px 0;
+        // &:last-child {
+        //     border-bottom: 0;
+        // }
+        .inner {
+            .image {
+                margin-right: 12px;
+                img {
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+            .content {
+                h6 {
+                    line-height: 18px;
+                    margin-bottom: 9px;
+                }
+                .text-1 {
+                    font-size: 10px;
+                    margin-bottom: 5px;
+                    color: #818089;
+                } 
+                .text-2 {
+                    font-weight: 600;
+                    font-size: 12px;
+                    line-height: 18px;
+                } 
+            }
+        }
+        .price {
+            padding-top: 1px;
+            text-align: end;
+            .box-title {
+                margin-bottom: 16px;
+                a {
+                    padding: 4px 12px;
+                    background: rgba(195, 194, 209, 0.1);
+                    border-radius: 6px;
+                    overflow: hidden;
+                    position: relative;
+                    display: inline-block;
+                    font-weight: 600;
+                    font-size: 10px;               
+                }
+            }
+        }
+    }
+    input[type=text]:focus {
+        border: 1px solid #F38535;
+    }
+    input[type=text] {
+        background: $color-2;
+        font-size: 12px;
+        line-height: 18px;
+        border: 1px solid #F38535;
+        width: 24px;
+        height: 24px;
+        padding: 0;
+        text-align: center;
+    }
+    .input-text {
+        opacity: 0;
+    }
+
+    .btn-quantity {
+        padding: 6px 7.2px 6px;
+        line-height: 0;
+        border-radius: 4px;
+        background: $bg-color;
+        border: 0;
+        cursor: pointer;
+        i {
+            font-size: 12px;
+        }
+    }
+    .minus-btn {
+        margin-right: 10px;
+        opacity: 0;
+    }
+    .plus-btn {
+        margin-left: 10px;
+        margin-right: 2px;
+    }
+    .acti {
+        opacity: 1;
+    }
+}
+
+// input[type=number]::-webkit-inner-spin-button,
+// input[type=number]::-webkit-outer-spin-button {
+//     opacity: 0;
+// }
+
+// .number-wrapper {
+//     position: relative;
+//     input[type=number] {
+//         background: $color-2;
+//     }
+// }
+  
+// .number-wrapper:after,
+// .number-wrapper:before {
+//     position: absolute;
+//     right: 5px;
+//     width: 1.6em;
+//     height: .9em;
+//     font-size: 14px;
+//     pointer-events: none;
+//     background: transparent;
+// }
+  
+// .number-wrapper:after {
+//     color: var(--primary-color3);
+//     content: "\f067";
+//     font-family: 'Font Awesome 5 Pro';
+//     top: 12px;
+// }
+  
+// .number-wrapper:before {
+//     color: var(--primary-color3);
+//     content: "\f068";
+//     font-family: 'Font Awesome 5 Pro';
+//     bottom: 12px
+// }
+
+
+
+.flat-tabs {
+    &.themesflat-tabs {
+        margin-bottom: 4px;
+    }
+    .box-tab {
+        margin-bottom: 24px;
+    }
+    .tab-title {
+        display      : flex;
+        align-items  : center;
+        padding      : 0px 0;
+        li {
+            position    : relative;
+            line-height : 24px;
+            margin-right: 17px;
+            padding: 6px 15px;
+            cursor      : pointer;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            // &:hover h4,
+            // &.active h4 {
+            //     color: var(--primary-color2);
+            // }
+            // &:last-child {
+            //     margin-right: 0;
+            // }
+            h6 {
+                color: $color-6;
+                @include transition3;
+            }
+            &.active,
+            &:hover {
+                border: 0px solid ;
+                background: $bg-color;
+                padding: 7px 16px;
+                h6 {
+                    color: $color-1;
+                }
+            }
+        }
+    }
+}   
 
 
