@@ -704,6 +704,10 @@ h6 {
     font-weight: 400;
 }
 
+.fw-5 {
+    font-weight: 500;
+}
+
 .fw-6 {
     font-weight: 600;
 }
@@ -1364,42 +1368,6 @@ a {
 }
 
 
-// swiper pagination slider
-.flat-themes .swiper-pagination,
-.flat-outlets .swiper-pagination {
-    width: 100%;
-    margin-top: 43px;
-    position: relative;
-    bottom: 0 !important; 
-}
-.flat-outlets .swiper-pagination-bullet {
-    width: 8px;
-    height: 8px;
-    border: 1px solid $color-1;
-    opacity: 1;
-    margin: 0 8px !important;
-}
-
-.swiper-pagination-bullet.swiper-pagination-bullet-active {
-    width: 8px;
-    height: 8px;
-    background: $color-1;
-    opacity: 1;
-    z-index: 99;
-    // margin: 0 12px !important;
-    &::before {
-        @include transition3;
-        position: absolute;
-        transform: translate(-50%, -50%);
-        top: 50%;
-        border-radius: 50%;
-        content: "";
-        width : 17px;
-        height: 17px;
-        border: 1px solid $color-1;
-        overflow: visible;
-    }
-}
 
 /* side bar */
 .side-bar {

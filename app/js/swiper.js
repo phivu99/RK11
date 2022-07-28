@@ -85,6 +85,23 @@ var swiper =  new Swiper(".carousel-1", {
     },
 });
 
+var swiper =  new Swiper(".carousel-2", {
+    slidesPerView: 1,
+    speed: 500,
+    effect: "fade",
+    fadeEffect: {
+        crossFade: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination2",
+        clickable: true,
+    },
+});
+
 var swiper =  new Swiper(".carousel-3", {
     autoplay: {
         delay: 6000,

@@ -241,57 +241,62 @@
     transition-delay: 500ms;
 }
 
+
 // swiper pagination slider
 .flat-themes .swiper-pagination,
-.flat-practice .swiper-pagination {
+.flat-outlets .swiper-pagination {
     width: 100%;
-    margin-top: 50px;
+    margin-top: 43px;
     position: relative;
     bottom: 0 !important; 
 }
-
-.slider.home2 .swiper-pagination2 {
-    position: absolute;
-    bottom: 11.3%;
-    right: 18.9%;
-    z-index: 9;
-}
-
-.slider.home3 .swiper-pagination2 {
-    position: absolute;
-    bottom: 3.6%;
-    right: 47.6%;
-    z-index: 9;
-}
-
-
-.flat-themes .swiper-pagination-bullet,
-.flat-practice .swiper-pagination-bullet {
-    width: 9px;
-    height: 9px;
-    background: #23262933;
+.flat-outlets .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    border: 1px solid $color-1;
     opacity: 1;
-    margin: 0 10px !important;
+    margin: 0 8px !important;
+}
+
+.flat-outlets .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    width: 8px;
+    height: 8px;
+    background: $color-1;
+    opacity: 1;
     z-index: 99;
+    // margin: 0 12px !important;
     &::before {
         @include transition3;
         position: absolute;
-        transform: translate(-50%, -57%);
+        transform: translate(-50%, -50%);
         top: 50%;
         border-radius: 50%;
         content: "";
         width : 17px;
         height: 17px;
-        border: 1px solid #23262933;
+        border: 1px solid $color-1;
         overflow: visible;
     }
 }
 
-.slider.home3 .swiper-pagination-bullet,
-.home2.tf-2 .swiper-pagination-bullet {
-    background: #FFFFFF66;
-    &::before {
-        border: 1px solid #FFFFFF33;
-    }
+// side bar
+.side-bar .swiper-pagination2 {
+    z-index: 9;
+    position: absolute;
+    bottom: 11px;
 }
 
+.side-bar .swiper-pagination-bullet {
+    width: 16px;
+    height: 3px;
+    background-color: rgba(255, 255, 255,02);
+    border-radius: 0;
+    margin: 0 3px !important;
+    @include transition3;
+    &.swiper-pagination-bullet-active {
+        width: 37px;
+        background-color: $color-1;
+        border: 0;
+        height: 3px;
+    }
+}
