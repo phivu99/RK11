@@ -156,6 +156,10 @@
   .flat-contact-page .box-contact {
     padding: 0 !important;
   }
+
+  .flat-price-outlets .post {
+    padding-right: 0px;
+  }
 }
 @media only screen and (max-width: 991px) {
   .mobile-button {
@@ -475,6 +479,34 @@
   .heading-section .title-69 {
     margin-bottom: 20px;
   }
+
+  .flat-price-outlets {
+    padding: 150px 0 50px;
+  }
+  .flat-price-outlets .post-style {
+    margin-bottom: 50px !important;
+  }
+
+  .side-bar {
+    margin-top: 60px;
+    padding: 0;
+  }
+  .side-bar .swiper-pagination2 {
+    display: unset;
+  }
+  .side-bar .widget-price .booking-box {
+    padding: 28px 23px 30px;
+  }
+  .side-bar .widget-price .booking-box .count-price {
+    margin-bottom: 28px;
+  }
+
+  .flat-for-you {
+    padding-bottom: 10px;
+  }
+  .flat-for-you .box {
+    margin-bottom: 35px;
+  }
 }
 @media only screen and (max-width: 767px) {
   .tf-section2,
@@ -606,19 +638,6 @@
   }
   .flat-blog-details .post .box-item .tags {
     margin-bottom: 20px;
-  }
-
-  .side-bar {
-    margin-top: 55px;
-  }
-  .side-bar .widget.search {
-    margin-bottom: 40px;
-  }
-  .side-bar .widget .recent-news li .title-post {
-    padding-top: 10px;
-  }
-  .side-bar .widget.widget-categories {
-    margin-bottom: 36px;
   }
 
   .fancybox-slide--iframe .fancybox-content {
@@ -1064,6 +1083,163 @@
     line-height: 51px;
     margin-bottom: 16px;
   }
+
+  .post-orders .wrap-orders {
+    display: block;
+  }
+  .post-orders .wrap-orders .box-orders {
+    width: calc(100% - 30px);
+    margin-bottom: 23px;
+  }
+
+  .flat-price-outlets {
+    padding: 135px 0 50px;
+  }
+  .flat-price-outlets .post h3 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .flat-price-outlets .post .post-style {
+    margin-bottom: 40px !important;
+  }
+  .flat-price-outlets .post .post-about .wrap-about {
+    margin-bottom: 25px;
+    display: block;
+  }
+  .flat-price-outlets .post .post-about .box-about.box-1 {
+    margin-right: 0px;
+  }
+  .flat-price-outlets .post .post-about .box-about .inner {
+    margin-bottom: 18px;
+  }
+  .flat-price-outlets .post .post-packages h3 {
+    margin-bottom: 25px;
+  }
+  .flat-price-outlets .post .post-packages .wrap {
+    display: block;
+  }
+  .flat-price-outlets .post .post-packages .wrap .box {
+    width: calc(100% - 30px);
+    padding: 23px 15px;
+    margin-bottom: 15px;
+    display: flex;
+  }
+  .flat-price-outlets .post .post-packages .wrap .box.active, .flat-price-outlets .post .post-packages .wrap .box:hover {
+    padding: 24px 16px;
+  }
+  .flat-price-outlets .post .post-packages .wrap .box .icon {
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
+  .flat-price-outlets .post .post-packages .wrap .box h4 {
+    font-size: 18px;
+  }
+  .flat-price-outlets .post .post-packages .wrap .box .sale {
+    right: 15px;
+  }
+  .flat-price-outlets .post .post-features .box-features .content {
+    width: 90%;
+  }
+  .flat-price-outlets .post .post-features .box-features .content .title-content h5 {
+    font-size: 14px;
+  }
+  .flat-price-outlets .post .post-features .box-features .content .title-content span {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .flat-price-outlets .post .post-features .box-features .icon {
+    margin-right: 20px;
+  }
+  .flat-price-outlets .post .post-reviews .wrap-title .button-view {
+    display: none;
+  }
+  .flat-price-outlets .post .post-reviews .wrap-reviews {
+    padding: 22px 15px 23px;
+    margin-bottom: 20px;
+  }
+  .flat-price-outlets .post .post-reviews .wrap-reviews .box-reviews .author .title-author h4 {
+    font-size: 18px;
+  }
+  .flat-price-outlets .post .post-reviews .wrap-reviews .box-reviews .author .image {
+    width: 65px;
+    height: 65px;
+  }
+
+  .flat-tabs .tab-title li {
+    margin-right: 10px;
+  }
+  .flat-tabs .tab-title li h6 {
+    font-size: 12px;
+  }
+
+  .side-bar {
+    margin-top: 55px;
+  }
+  .side-bar .title-sidebar {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  .side-bar .widget-price {
+    padding: 8px 0 0;
+  }
+  .side-bar .widget-price .box-icon {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    padding-top: 10px;
+    padding-bottom: 17px;
+    align-items: center;
+  }
+  .side-bar .widget-price .box-icon .content .title-icon {
+    margin-bottom: 10px;
+    line-height: 24px;
+  }
+  .side-bar .widget-price .box-icon.box-clock .title-now {
+    font-size: 14px;
+    line-height: 20px;
+    margin-right: 8px;
+  }
+  .side-bar .widget-price .box-icon.box-clock h6 {
+    line-height: 20px;
+  }
+  .side-bar .widget-price .booking-box {
+    padding: 28px 15px 30px;
+  }
+  .side-bar .widget-price .booking-box h4 {
+    font-size: 18px;
+  }
+  .side-bar .widget-price .booking-box .time {
+    display: block;
+  }
+  .side-bar .widget-price .booking-box .time fieldset {
+    width: 100%;
+  }
+  .side-bar .widget-price .booking-box .time fieldset.two {
+    padding: 0;
+  }
+  .side-bar .widget-price .booking-box .time fieldset.two p {
+    left: 20px;
+  }
+  .side-bar .widget-price .booking-box .time fieldset.one {
+    padding: 0;
+  }
+  .side-bar .widget-hosted {
+    padding: 24px 15px 26px;
+  }
+
+  .flat-for-you .box .content h4 {
+    font-size: 18px;
+  }
+  .flat-for-you .box .content p {
+    font-size: 14px !important;
+  }
+
+  .food {
+    height: unset;
+  }
+
+  .font-13 {
+    font-size: 13px !important;
+  }
 }
 @media only screen and (max-width: 500px) {
   .flat-contests-page .wrap-contests .box-contests.box-2 {
@@ -1118,6 +1294,10 @@
   .flat-download .wrap-images .image-mobi2 {
     right: 15px;
   }
+
+  .flat-price-outlets .post .post-features .box-features .content {
+    width: 70%;
+  }
 }
 @media only screen and (max-width: 375px) {
   .slider .slider-item .content .heading h1 {
@@ -1137,6 +1317,38 @@
 
   .thems-counter .counter-box {
     margin-bottom: 45px;
+  }
+
+  .flat-tabs .tab-title {
+    flex-wrap: wrap;
+  }
+  .flat-tabs .tab-title li {
+    margin-bottom: 10px;
+  }
+  .flat-tabs .box-tab {
+    margin-bottom: 15px;
+  }
+
+  .food .food-box {
+    align-items: center;
+    padding: 18px 0 15px;
+  }
+  .food .food-box .inner {
+    display: block;
+  }
+  .food .food-box .inner .image {
+    margin-bottom: 10px;
+  }
+  .food .food-box .inner .content h6 {
+    margin-bottom: 5px;
+  }
+
+  .post-reviews .rating {
+    display: none;
+  }
+
+  .post-orders .wrap-orders .box-orders h4 {
+    margin-bottom: 2px;
   }
 }
 @media only screen and (max-width: 330px) {

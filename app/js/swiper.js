@@ -1,8 +1,8 @@
 var swiper =  new Swiper(".mainslider", {
-    // autoplay: {
-    // delay: 8000,
-    // disableOnInteraction: false,
-    // },
+    autoplay: {
+    delay: 8000,
+    disableOnInteraction: false,
+    },
     slidesPerView: 1,
     speed: 500,
     effect: "fade",
@@ -20,10 +20,10 @@ var swiper =  new Swiper(".mainslider", {
 });
 
 var swiper =  new Swiper(".carousel", {
-    // autoplay: {
-    //     delay: 5000,
-    //     disableOnInteraction: false,
-    //     },
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+        },
     loop:false,
     slidesPerView: 1,
     spaceBetween: 30,
@@ -86,6 +86,10 @@ var swiper =  new Swiper(".carousel-1", {
 });
 
 var swiper =  new Swiper(".carousel-2", {
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+        },
     slidesPerView: 1,
     speed: 500,
     effect: "fade",

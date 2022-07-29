@@ -173,6 +173,10 @@
       padding: 0 !important;
     }
 
+    .flat-price-outlets .post {
+      padding-right: 0px; 
+    }
+
   }
   
   @media only screen and (max-width: 991px) {
@@ -507,27 +511,35 @@
     margin-bottom: 20px;
   }
 
-
+  .flat-price-outlets {
+    padding: 150px 0 50px;
+    .post-style {
+      margin-bottom: 50px !important;
+    }
+  }
   
+  .side-bar {
+      margin-top: 60px;
+      padding: 0;
+      .swiper-pagination2 {
+        display: unset;
+      }
+      .widget-price .booking-box {
+        padding: 28px 23px 30px;
+        .count-price {
+          margin-bottom: 28px;
+        }
+      }
+  }
+
+  .flat-for-you {
+    padding-bottom: 10px;
+    .box {
+      margin-bottom: 35px;
+    }
+  }
 
 
-    // .side-bar {
-    //   margin-top: 60px;
-    //   .widget {
-    //     &.widget-categories {
-    //       margin-bottom: 40px;
-    //     }
-    //     .recent-news li {
-    //       padding-bottom: 15px;
-    //       .title-post {
-    //         padding-top: 20px;
-    //       }
-    //     }
-    //     &.widget-posts {
-    //       margin-bottom: 40px;
-    //     }
-    //   }
-    // }
     
   }
 
@@ -669,23 +681,6 @@
           .tags {
             margin-bottom: 20px;
           }
-        }
-      }
-    }
-  
-    .side-bar {
-      margin-top: 55px;
-      .widget {
-        &.search {
-          margin-bottom: 40px;
-        }
-        .recent-news {
-          li .title-post {
-            padding-top: 10px;
-          }
-        }
-        &.widget-categories {
-          margin-bottom: 36px;
         }
       }
     }
@@ -1163,7 +1158,188 @@
       margin-bottom: 16px;
     }
   
-    
+    .post-orders .wrap-orders {
+      display: block;
+      .box-orders {
+        width: calc(100% - 30px);
+        margin-bottom: 23px;
+      }
+    }
+ 
+    .flat-price-outlets {
+      padding: 135px 0 50px;
+      .post {
+        h3 {
+          font-size: 22px;
+          line-height: 28px;
+        }
+        .post-style {
+          margin-bottom: 40px !important;
+        }
+        .post-about {
+          .wrap-about {
+            margin-bottom: 25px;
+            display: block;
+          }
+          .box-about {
+            &.box-1 {
+              margin-right: 0px;
+            }
+            .inner {
+              margin-bottom: 18px;
+            }
+          }
+        }
+        .post-packages {
+          h3 {
+            margin-bottom: 25px;
+          }
+          .wrap {
+            display: block;
+            .box {
+              width: calc(100% - 30px);
+              padding: 23px 15px;
+              margin-bottom: 15px;
+              display: flex;
+              &.active,
+              &:hover {
+                padding: 24px 16px;
+              }
+              .icon {
+                margin-right: 10px;
+                margin-bottom: 0;
+              }
+              h4 {
+                font-size: 18px;
+              }
+              .sale { 
+                right: 15px;
+              }
+            }
+          }
+        }
+        .post-features .box-features {
+          .content {
+            width: 90%;
+            .title-content {
+              h5 {
+                font-size: 14px;
+              }
+              span {
+                font-size: 16px;
+                font-weight: 600;
+              }
+            }
+          }
+          .icon {
+            margin-right: 20px;
+          }
+        }
+        .post-reviews {
+          // .rating,
+          .wrap-title .button-view {
+            display: none;
+          }
+          .wrap-reviews {
+            padding: 22px 15px 23px;
+            margin-bottom: 20px;
+            .box-reviews .author {
+              .title-author h4 {
+                font-size: 18px;
+              }
+              .image {
+                width: 65px;
+                height: 65px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .flat-tabs {
+      .tab-title {
+        li {
+          margin-right: 10px;
+          h6 {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+
+    .side-bar {
+      margin-top: 55px;
+      .title-sidebar {
+        font-size: 28px;
+        margin-bottom: 30px;
+      }
+      .widget-price {
+        padding: 8px 0 0;
+        .box-icon {
+          padding-left: 15px !important;
+          padding-right: 15px !important;
+          padding-top: 10px ;
+          padding-bottom: 17px;
+          align-items: center;
+          .content .title-icon {
+            margin-bottom: 10px;
+            line-height: 24px;
+          }
+          &.box-clock {
+            .title-now {
+              font-size: 14px;
+              line-height: 20px;
+              margin-right: 8px;
+            }
+            h6 {
+              line-height: 20px;
+            }
+          }
+        }
+        .booking-box {
+          padding: 28px 15px 30px;
+          h4 {
+            font-size: 18px;
+          }
+          .time {
+            display: block;
+            fieldset {
+              width: 100%;
+              &.two {
+                padding: 0;
+                p {
+                  left: 20px;
+                }
+              }
+              &.one {
+                padding: 0;
+              }
+            }
+          }
+        }
+      }
+      .widget-hosted {
+        padding: 24px 15px 26px;
+      }
+    }
+
+    .flat-for-you .box .content {
+      h4 {
+        font-size: 18px;
+      }
+      p {
+        font-size: 14px !important;
+      }
+    }
+
+    .food {
+      height: unset;
+    }
+
+    .font-13 {
+      font-size: 13px !important;
+    }
     
   }
 
@@ -1230,6 +1406,10 @@
     }
   }
 
+  .flat-price-outlets .post .post-features .box-features .content {
+    width: 70%;
+  }
+
 
   }
 
@@ -1253,6 +1433,41 @@
     .thems-counter .counter-box {
       margin-bottom: 45px;
     }
+
+    .flat-tabs {
+      .tab-title {
+        flex-wrap: wrap;
+        li {
+          margin-bottom: 10px;
+        }
+      }
+      .box-tab {
+        margin-bottom: 15px;
+      }
+    }
+
+    .food .food-box {
+      align-items: center;
+      padding: 18px 0 15px;
+      .inner {
+        display: block;
+        .image {
+          margin-bottom: 10px;
+        }
+        .content h6 {
+          margin-bottom: 5px;
+        }
+      }
+    }
+
+    .post-reviews  .rating {
+      display: none;
+    }
+
+    .post-orders .wrap-orders .box-orders h4 {
+      margin-bottom: 2px;
+    }
+    
   }
 
   @media only screen and (max-width: 330px) {
