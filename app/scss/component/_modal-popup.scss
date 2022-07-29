@@ -133,14 +133,7 @@
                     background:  rgba(195,194,209,0.5);
                   
                 }
-                // &:last-child {
-                    
-                //         &::after {
-                //             display: none;
-                //         }
-                 
-                   
-                // }
+ 
                 &:nth-last-child(2) {
                             &::after {
                                 display: none;
@@ -168,8 +161,22 @@
                
             // }
         }
+        &:last-child {
+            .inner 
+            {
+                .step {
+                    &::after {
+                        display: none;
+                    }
+                }
+                
+            }            
+            
+     
        
+        }
     }
+    
     .form-info {
         margin-bottom: 30px;
         fieldset {
@@ -183,6 +190,7 @@
                 padding: 11px 15px 11px 19px;
                 border-radius: 8px;
                 font-size: 16px;
+                color: #000;
                 &::placeholder {
                     color: #C3C2D1;
                     line-height: 24px;

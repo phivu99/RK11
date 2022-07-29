@@ -3292,6 +3292,9 @@ Animations
   display: none;
   border: 0;
 }
+.modal-body .box-step:last-child .inner .step::after {
+  display: none;
+}
 .modal-body .form-info {
   margin-bottom: 30px;
 }
@@ -3307,6 +3310,7 @@ Animations
   padding: 11px 15px 11px 19px;
   border-radius: 8px;
   font-size: 16px;
+  color: #000;
 }
 .modal-body .form-info fieldset input::placeholder {
   color: #C3C2D1;

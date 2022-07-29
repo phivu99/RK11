@@ -66,7 +66,7 @@
         };
 
     var ajaxContactForm = function () {
-        $('#contactform,#commentform').each(function () {
+        $('#contactform,#commentform,#comments').each(function () {
             $(this).validate({
                 submitHandler: function (form) {
                     var $form = $(form),
