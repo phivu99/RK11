@@ -1165,10 +1165,10 @@
     height: 65px;
   }
 
-  .flat-tabs .tab-title li {
+  .flat-price-outlets .post .flat-tabs .tab-title li {
     margin-right: 10px;
   }
-  .flat-tabs .tab-title li h6 {
+  .flat-price-outlets .post .flat-tabs .tab-title li h6 {
     font-size: 12px;
   }
 
@@ -1319,13 +1319,13 @@
     margin-bottom: 45px;
   }
 
-  .flat-tabs .tab-title {
+  .flat-price-outlets .post .flat-tabs .tab-title {
     flex-wrap: wrap;
   }
-  .flat-tabs .tab-title li {
+  .flat-price-outlets .post .flat-tabs .tab-title li {
     margin-bottom: 10px;
   }
-  .flat-tabs .box-tab {
+  .flat-price-outlets .post .flat-tabs .box-tab {
     margin-bottom: 15px;
   }
 

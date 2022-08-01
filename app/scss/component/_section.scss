@@ -1363,6 +1363,42 @@
                 }
             }
         }
+        // flat tabs
+        .flat-tabs {
+            &.themesflat-tabs {
+                margin-bottom: 4px;
+            }
+            .box-tab {
+                margin-bottom: 24px;
+            }
+            .tab-title {
+                display      : flex;
+                align-items  : center;
+                padding      : 0px 0;
+                li {
+                    position    : relative;
+                    line-height : 24px;
+                    margin-right: 17px;
+                    padding: 6px 15px;
+                    cursor      : pointer;
+                    border-radius: 12px;
+                    border: 1px solid rgba(255, 255, 255, 0.2);
+                    h6 {
+                        color: $color-6;
+                        @include transition3;
+                    }
+                    &.active,
+                    &:hover {
+                        border: 0px solid ;
+                        background: $bg-color;
+                        padding: 7px 16px;
+                        h6 {
+                            color: $color-1;
+                        }
+                    }
+                }
+            }
+        }  
     }
 }
 
@@ -1523,43 +1559,7 @@
         opacity: 1;
     }
 }
-
-// flat tabs
-.flat-tabs {
-    &.themesflat-tabs {
-        margin-bottom: 4px;
-    }
-    .box-tab {
-        margin-bottom: 24px;
-    }
-    .tab-title {
-        display      : flex;
-        align-items  : center;
-        padding      : 0px 0;
-        li {
-            position    : relative;
-            line-height : 24px;
-            margin-right: 17px;
-            padding: 6px 15px;
-            cursor      : pointer;
-            border-radius: 12px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            h6 {
-                color: $color-6;
-                @include transition3;
-            }
-            &.active,
-            &:hover {
-                border: 0px solid ;
-                background: $bg-color;
-                padding: 7px 16px;
-                h6 {
-                    color: $color-1;
-                }
-            }
-        }
-    }
-}   
+ 
 
 .flat-for-you {
     padding-bottom: 60px;

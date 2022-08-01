@@ -1956,6 +1956,42 @@ Animations
   width: 100%;
   border-radius: 10px;
 }
+.flat-price-outlets .post .flat-tabs.themesflat-tabs {
+  margin-bottom: 4px;
+}
+.flat-price-outlets .post .flat-tabs .box-tab {
+  margin-bottom: 24px;
+}
+.flat-price-outlets .post .flat-tabs .tab-title {
+  display: flex;
+  align-items: center;
+  padding: 0px 0;
+}
+.flat-price-outlets .post .flat-tabs .tab-title li {
+  position: relative;
+  line-height: 24px;
+  margin-right: 17px;
+  padding: 6px 15px;
+  cursor: pointer;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.flat-price-outlets .post .flat-tabs .tab-title li h6 {
+  color: rgba(255, 255, 255, 0.6);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.flat-price-outlets .post .flat-tabs .tab-title li.active, .flat-price-outlets .post .flat-tabs .tab-title li:hover {
+  border: 0px solid;
+  background: linear-gradient(173.06deg, #E6902B -0.31%, #A91B3D 99.69%);
+  padding: 7px 16px;
+}
+.flat-price-outlets .post .flat-tabs .tab-title li.active h6, .flat-price-outlets .post .flat-tabs .tab-title li:hover h6 {
+  color: #fff;
+}
 
 .post-orders {
   margin-bottom: 60px;
@@ -2105,43 +2141,6 @@ Animations
 }
 .food .acti {
   opacity: 1;
-}
-
-.flat-tabs.themesflat-tabs {
-  margin-bottom: 4px;
-}
-.flat-tabs .box-tab {
-  margin-bottom: 24px;
-}
-.flat-tabs .tab-title {
-  display: flex;
-  align-items: center;
-  padding: 0px 0;
-}
-.flat-tabs .tab-title li {
-  position: relative;
-  line-height: 24px;
-  margin-right: 17px;
-  padding: 6px 15px;
-  cursor: pointer;
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-}
-.flat-tabs .tab-title li h6 {
-  color: rgba(255, 255, 255, 0.6);
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-.flat-tabs .tab-title li.active, .flat-tabs .tab-title li:hover {
-  border: 0px solid;
-  background: linear-gradient(173.06deg, #E6902B -0.31%, #A91B3D 99.69%);
-  padding: 7px 16px;
-}
-.flat-tabs .tab-title li.active h6, .flat-tabs .tab-title li:hover h6 {
-  color: #fff;
 }
 
 .flat-for-you {
@@ -3181,9 +3180,9 @@ Animations
 .modal-body .btn.btn-primary {
   width: 100%;
   border-radius: 10px;
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 22px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
   padding: 10px 20px;
   background: linear-gradient(173.06deg, #E6902B -0.31%, #A91B3D 99.69%) !important;
   -webkit-transition: all 0.3s ease;
@@ -3224,10 +3223,6 @@ Animations
   color: #fff;
 }
 
-.is_dark .modal-content .close {
-  background-color: var(--primary-color3);
-}
-
 .modal-body h3 {
   text-align: center;
   font-weight: 600;
@@ -3258,8 +3253,11 @@ Animations
   background: #fff;
   margin-bottom: 14px;
 }
-.modal-body .box-step .inner .step.step-1 {
+.modal-body .box-step .inner .step.style-1 {
   border: 1px solid #F38535;
+}
+.modal-body .box-step .inner .step.style-2 {
+  border: 1px solid #48BC65;
 }
 .modal-body .box-step .inner .step::after {
   content: "";
@@ -3283,13 +3281,13 @@ Animations
 .modal-body .form-info {
   margin-bottom: 30px;
 }
-.modal-body .form-info fieldset {
+.modal-body fieldset {
   position: relative;
   overflow: hidden;
   width: 100%;
   margin-bottom: 9px;
 }
-.modal-body .form-info fieldset input {
+.modal-body fieldset input {
   background-color: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(226, 227, 229, 0.6);
   padding: 11px 15px 11px 19px;
@@ -3297,10 +3295,163 @@ Animations
   font-size: 16px;
   color: #000;
 }
-.modal-body .form-info fieldset input::placeholder {
+.modal-body fieldset input::placeholder {
   color: #C3C2D1;
   line-height: 24px;
   font-size: 16px;
+}
+.modal-body .flat-tabs .tab-title {
+  display: block;
+}
+.modal-body .flat-tabs .box-tab {
+  margin-bottom: 32px;
+}
+.modal-body .flat-tabs .tab-title {
+  padding: 0px 0;
+}
+.modal-body .flat-tabs .tab-title li {
+  position: relative;
+  margin-bottom: 5px;
+  padding: 14px 23px 15px;
+  border: 1px solid rgba(226, 227, 229, 0.6);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.modal-body .flat-tabs .tab-title li h6 {
+  color: #000;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.modal-body .flat-tabs .tab-title li a {
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+.modal-body .flat-tabs .tab-title li a::before {
+  content: "";
+  align-items: center;
+  display: inline-flex;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin-right: 28px;
+  border: 2px solid #F38535;
+}
+.modal-body .flat-tabs .tab-title li img {
+  margin-right: 21px;
+}
+.modal-body .flat-accordion {
+  margin-bottom: 32px;
+}
+.modal-body .flat-accordion .flat-toggle {
+  border: 1px solid rgba(226, 227, 229, 0.6);
+  margin-bottom: 5px;
+  border-radius: 8px;
+}
+.modal-body .flat-accordion .acti {
+  background: #FAFAFA;
+}
+.modal-body .flat-accordion .toggle-title {
+  position: relative;
+  margin-bottom: 4px;
+  padding: 14px 24px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.modal-body .flat-accordion .toggle-title h6 {
+  color: #000;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.modal-body .flat-accordion .toggle-title a {
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+.modal-body .flat-accordion .toggle-title a::before {
+  content: "";
+  align-items: center;
+  display: inline-flex;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin-right: 28px;
+  border: 2px solid #F38535;
+}
+.modal-body .flat-accordion .toggle-title img {
+  margin-right: 20px;
+}
+.modal-body .flat-accordion .toggle-title.active {
+  background: #FAFAFA;
+  padding: 14px 24px 17px;
+  margin-bottom: 0;
+}
+.modal-body .flat-accordion .toggle-title.active a::before {
+  border: 5px solid #F38535;
+}
+.modal-body .flat-accordion .toggle-content {
+  padding: 0px 23px 15px 23px;
+  background: #FAFAFA;
+  display: none;
+}
+.modal-body .flat-accordion .toggle-content .form {
+  border-top: 1px solid rgba(226, 227, 229, 0.6);
+  padding-top: 16px;
+}
+.modal-body .flat-accordion .toggle-content .form p {
+  margin-bottom: 4px;
+  color: #000;
+}
+.modal-body .flat-accordion .toggle-content .form fieldset {
+  margin-bottom: 12px;
+}
+.modal-body .flat-accordion .toggle-content .form fieldset input {
+  background-color: #fff;
+  border: 1px solid rgba(226, 227, 229, 0.6);
+  padding: 2px 15px 4px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #000;
+}
+.modal-body .flat-accordion .toggle-content .form fieldset input::placeholder {
+  color: #C3C2D1;
+  line-height: 18px;
+  font-size: 12px;
+  font-weight: 400;
+}
+.modal-body .flat-accordion .toggle-content .form .style-date {
+  margin-right: 15px;
+}
+.modal-body .flat-accordion .toggle-content .form .button-btn {
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+  background: #F38535;
+  border-radius: 10px;
+  padding: 10px 16px;
+}
+.modal-body .flat-accordion .toggle-content .form .box-btn {
+  text-align: end;
+  margin-top: 2px;
+}
+.modal-body .wrap-images .content {
+  padding: 22px 0;
+  margin-bottom: 22px;
+}
+.modal-body .wrap-images .content h6 {
+  margin-bottom: 22px;
+  line-height: 18px;
+}
+.modal-body .wrap-images .content .box-p {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.1px;
 }
 
 .modal {

@@ -106,12 +106,24 @@
                 $(this).closest('.flat-accordion').find('.toggle-title.active').toggleClass('active').next().slideToggle(args);
                 $(this).toggleClass('active');
                 $(this).next().slideToggle(args);
+                
+                
             } else {
                 $(this).toggleClass('active');
                 $(this).next().slideToggle(args);
             }
+            // $(this).closest('.flat-toggle').addClass("acti");
         });
+
+        // $(".toggle-title").on('click', function (e) {
+        //     e.preventDefault();
+        //     // $(".flat-toggle").addClass("acti")
+        //     $this.closest('.flat-accordion').find('.flat-toggle').addClass("acti");
+        // });
+
     };
+
+
 
     var buttonHeart = function () { 
         $(".wishlist-button").on("click", function() {
@@ -376,6 +388,39 @@
         });
    }
 
+   var dropdown = function(id){
+    var obj = $(id+'.dropdown');
+    var btn = obj.find('.btn-selector');
+    var dd = obj.find('ul');
+    var opt = dd.find('li');
+        dd.hide();
+        obj.on("mouseenter", function() {
+            dd.show();
+            dd.addClass('show');
+            $(this).css("z-index",1000);
+        }).on("mouseleave", function() {
+            dd.hide();
+             $(this).css("z-index","auto")
+             dd.removeClass('show');
+        })
+        
+        opt.on("click", function() {
+            dd.hide();
+            var txt = $(this).text();
+            opt.removeClass("active");
+            $(this).addClass("active");
+            btn.text(txt);
+        });
+    }
+
+//    var btnQuantityy = function () {
+//     $('.plus-btn').on('click') {
+//         closest('.quantity').find('.input-text').addClass("acti");
+//     }
+//    }
+
+  
+
 
     // Dom Ready
     $(function () {
@@ -396,7 +441,7 @@
         donatProgress();
         tabs();
         btnQuantity();
-       
+        dropdown('#item_category');
         Preloader();
         activeMenuAndSmoothScroll();
         myFuncti();
