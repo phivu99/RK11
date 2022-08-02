@@ -539,6 +539,20 @@
     }
   }
 
+  .side-bar .swiper-container {
+    text-align: center;
+  }
+
+  .modal-body {
+    padding: 41px 50px !important;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .modal-content {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
 
     
   }
@@ -1339,6 +1353,138 @@
 
     .font-13 {
       font-size: 13px !important;
+    }
+
+    .modal {
+      // all:unset;
+      position: unset;
+
+      display: contents;
+      .modal-body {
+        padding: 40px 0px 40px !important;
+        &.body-check,
+        &.body-pass-card,
+        .wrap-step {
+          display: none;
+        }
+        &.body-1 {
+          padding: 30px 0px 40px !important;
+          .btn {
+            display: none;
+          }
+          .form-info {
+            margin-bottom: 0px;
+          }
+        }
+        &.body-2 {
+          padding: 0 !important;
+          h3 {
+            display: none;
+          }
+          .btn {
+            display: none;
+          }
+          // .dropdown {
+          //   order: 1 !important;
+          // } 
+          .form {
+            div {
+              display: block;
+            }
+          }
+          // .inner-2,
+          // .inner-1 {
+          //   order: 0 !important;
+          // }
+          .wrap-visa {
+            padding: 20px 0 0 0;
+            .box-visa .images {
+              .texts-1 {
+                margin-right: 5px;
+              }
+              img {
+                margin-right: 12px;
+              }
+            }
+            .icon-check {
+              position: absolute;
+              right: 10px;
+            }
+          }
+          p {
+            font-size: 12px !important;
+          }
+          .flat-accordion {
+            margin-bottom: 0;
+            .toggle-content {
+              padding-bottom: 25px;
+              .form .button-btn { 
+                width: 100%;
+                text-align: center;
+                padding: 10px 0;
+                margin-top: 7px;
+              }
+            }
+          }
+        }
+
+        
+        &.body-3 {
+          .wrap-images {
+            display: block;
+            border: unset;
+            img {
+              width: 100%;
+            }
+            .content {
+              padding: 22px 0 0 0px;
+              h6 {
+                margin-bottom: 15px;
+              }
+            }
+          }
+          .wrap-pay {
+            margin-bottom: 7px;
+          }
+          h3 {
+            display: none;
+          }
+        }
+
+        .icon-prev {
+          display: unset;
+          position: absolute;
+          margin-top: 5px;
+        }
+        h3 {
+          font-size: 20px;
+          line-height: 26px;
+        }
+        h4 {
+          margin-bottom: 25px;
+        }
+      }
+    }
+
+    .modal-content {
+      margin: 0;
+
+      .close {
+        display: none;
+      }
+    }
+    .popup .modal-content {
+      border-radius: 0 !important;
+      box-shadow: unset !important;
+    }
+    .modal-backdrop {
+      all:unset;
+    }
+    .modal-dialog-centered {
+      margin: 0;
+    }
+    .modal.fade .modal-dialog {
+      transform: unset;
     }
     
   }

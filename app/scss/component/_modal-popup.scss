@@ -83,6 +83,9 @@
 }
 
 .modal-body {
+    .icon-prev {
+        display: none;
+    }
     h3{
         text-align: center;
         font-weight: 600;
@@ -215,13 +218,6 @@
                 img {
                     margin-right: 21px;
                 }
-                &.active,
-                &:hover {
-                    // border: 0px solid ;
-                    // background: $bg-color;
-                    // padding: 7px 16px;
-           
-                }
             }
         }
     }   
@@ -229,13 +225,8 @@
         margin-bottom: 32px;
         .flat-toggle {
             border: 1px solid rgba(226, 227, 229, 0.6);
-            // border-bottom: unset;
             margin-bottom: 5px;
             border-radius: 8px;
-            // &:last-child {
-            //     border-bottom: 1px solid var(--primary-color5);
-            // }
-            
         }
         .acti {
             background: #FAFAFA;
@@ -244,8 +235,6 @@
             position    : relative;
             margin-bottom: 4px;
             padding: 14px 24px 12px;
-            // border: 1px solid rgba(226, 227, 229, 0.6);
-         
             border-radius: 8px;
             cursor      : pointer;
             h6 {
@@ -319,8 +308,6 @@
                     background: #F38535;
                     border-radius: 10px;
                     padding: 10px 16px;
-                    // width: 61px;
-                    // height: 32px;
                 }
                 .box-btn {
                     text-align: end;
@@ -329,22 +316,167 @@
             } 
         }
     }
-    .wrap-images {
-        .content {
-            padding: 22px 0;
-            margin-bottom: 22px;
-            h6 {
-                margin-bottom: 22px;
-                line-height: 18px;
+
+    .wrap-visa {
+        padding: 20px 0px 5px 40px;
+        border-top: 1px solid rgba(129,128,137,0.2);
+        .box-visa {
+            margin-bottom: 15px;
+            .images {
+                img {
+                    margin-right: 21px;
+                }
+                .texts-1 {
+                    margin-right: 20px;
+                }
             }
-            .box-p {
-                font-size: 14px;
-                font-weight: 400;
-                letter-spacing: -0.1px;
+            .icon-check {
+                i {
+                    color: $color-3;
+                    font-size: 13px;
+                    margin-top: 2px;
+                }
             }
         }
-        
+        .box-add {
+            .icon {
+                margin-right: 20px;
+            }
+        }
     }
+
+    .wrap-images {
+        margin-bottom: 28px;
+        border: 1px solid rgba(237, 232, 233, 0.6);
+        border-radius: 6px;
+        .content {
+            padding: 20px 0 0 21px;
+            h6 {
+                margin-bottom: 20px;
+                line-height: 18px;
+                color: #908E8E;
+            }
+            h4 {
+                margin-bottom: 7px;
+            }
+            .box-p {
+                p {
+                    font-size: 14px;
+                    font-weight: 400;
+                    letter-spacing: -0.1px;
+                    line-height: unset;
+                    display: flex;
+                    align-items: center;
+                    color: #908E8E;
+                    margin-right: 9px;
+                    &::before {
+                        content: "\f111";
+                        font-size: 3px;
+                        line-height: 21px;
+                        font-weight: 700;
+                        font-family: "Font Awesome 5 Pro";
+                        margin-right: 8px;
+                    }
+                    &:nth-last-child(4) {
+                        &::before {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .wrap-pay {
+        margin-bottom: 18px;
+        .text-16 {
+            font-size: 16px;
+            line-height: 20px;
+            color: #818089;
+            margin-bottom: 26px;
+        }
+        .box-pay {
+            &.box-1 {
+                padding-top: 7px;
+                .style-35 {
+                    margin-right: 4px;
+                }
+            }
+            &.box-2 {
+                text-align: end;
+                margin-right: -5px;
+                .text-pay {
+                    background: linear-gradient(0deg, rgba(58, 51, 53, 0.04), rgba(58, 51, 53, 0.04)), #FFFFFF;
+                    border-radius: 8px;
+                    padding: 9px 15px;
+                    display: table;
+                    margin-left: auto;
+                    font-weight: 600;
+                    color: #818089;
+                    a {
+                        display: inline-block;
+                        margin-right: 4px;
+                    }
+                }
+                div {
+                    text-align: end;
+                }
+            }
+        }
+    }
+    &.body-pass-card {
+        padding: 85px 174px 75px !important;
+        h3 {
+            text-align: unset;
+            margin-bottom: 35px;
+        }
+        p {
+            margin-bottom: 16px;
+        }
+        fieldset {
+            margin-right: 20px;
+            margin-bottom: 0;
+            &:last-child {
+                margin-right: 0px;
+            }
+            input {
+                padding: 17px 10px 17px 10px;
+                font-size: 26px;
+                text-align: center;
+            }
+        }
+        .form-info {
+            margin-bottom: 36px;
+        }
+    }
+    &.body-check {
+        text-align: center;
+        padding: 80px 235px !important;
+        img {
+            margin-bottom: 33px;
+        }
+        .box-title {
+            margin-bottom: 33px;
+            margin-right: -10px;
+            h3 {
+                margin-bottom: 15px;
+            }
+            p {
+                margin-bottom: 5px;
+                color: rgba(21,21,25,0.7);
+            }
+            .texts {
+                color: rgba(21,21,25,0.7);
+            }
+        }
+       
+    }
+}
+
+.mb-8 {
+    margin-bottom: 9px !important;
+}
+.mb-16 {
+    margin-bottom: 18px !important;
 }
 
 .modal{

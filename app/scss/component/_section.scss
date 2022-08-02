@@ -1754,24 +1754,25 @@
                 font-size: 20px;
                 pointer-events: none;
                 background: $color-3;
+                cursor: pointer;
             }
             
             .number-wrap::after {
-                color: #FFFFFF;
+                color: rgba(255, 255, 255, 0.7);
                 content: "\f106";
                 font-family: 'Font Awesome 5 Pro';
                 top: 0px;
                 z-index: 8;
-                border-radius: 0px 7px 0px 0px
+                border-radius: 0px 7px 0px 0px;
             }
             
             .number-wrap::before {
-                color: #FFFFFF;
+                color: rgba(255, 255, 255, 0.7);
                 content: "\f107";
                 font-family: 'Font Awesome 5 Pro';
                 bottom: 0px;
                 z-index: 9;
-                border-radius: 0px 0px 7px 0px
+                border-radius: 0px 0px 7px 0px;
             }
             .form-booking {
                 margin-bottom: 25px;
