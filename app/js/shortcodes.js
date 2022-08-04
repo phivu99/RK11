@@ -19,6 +19,8 @@
   * donatProgress
   * tabs
   * activeMenuAndSmoothScroll
+  * btnQuantity
+  * dropdown
 */
 
 ; (function ($) {
@@ -115,12 +117,6 @@
             // $(this).closest('.flat-toggle').addClass("acti");
         });
 
-        // $(".toggle-title").on('click', function (e) {
-        //     e.preventDefault();
-        //     // $(".flat-toggle").addClass("acti")
-        //     $this.closest('.flat-accordion').find('.flat-toggle').addClass("acti");
-        // });
-
     };
 
 
@@ -208,15 +204,15 @@
                 })
         ;}
 
-        var search = function () {
-            $('.header-search').on('click', function () {
-                $('.form-checkbox').find('input').prop('checked', false);
-            });
+        // var search = function () {
+        //     $('.header-search').on('click', function () {
+        //         $('.form-checkbox').find('input').prop('checked', false);
+        //     });
     
-            $('a.clear-checkbox').on('click' , function(e){
-              e.preventDefault();
-            });
-        };
+        //     $('a.clear-checkbox').on('click' , function(e){
+        //       e.preventDefault();
+        //     });
+        // };
 
     var flatProgressBar = function () {
         $('.couter').appear(function () {
@@ -412,15 +408,6 @@
             btn.text(txt);
         });
     }
-
-//    var btnQuantityy = function () {
-//     $('.plus-btn').on('click') {
-//         closest('.quantity').find('.input-text').addClass("acti");
-//     }
-//    }
-
-  
-
 
     // Dom Ready
     $(function () {

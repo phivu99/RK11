@@ -95,9 +95,7 @@
 .slider {
     position: relative;
     overflow: hidden;
-    .book-now {
-        bottom: 104px;
-    }
+
     .img-slider img {
         position: absolute;
         width: 100%;
@@ -264,7 +262,6 @@
     background: $color-1;
     opacity: 1;
     z-index: 99;
-    // margin: 0 12px !important;
     &::before {
         @include transition3;
         position: absolute;
@@ -279,7 +276,6 @@
     }
 }
 
-// side bar
 .side-bar .swiper-pagination2 {
     z-index: 9;
     position: absolute;

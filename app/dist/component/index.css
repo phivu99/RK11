@@ -256,6 +256,8 @@ header {
 }
 .nav .sub-menu .menu-item a {
   margin-left: 15px;
+  font-size: 22px;
+  line-height: 34px;
 }
 
 .nav .current-item > a,
@@ -330,6 +332,7 @@ header {
   z-index: 9999999;
   background-color: rgba(255, 255, 255, 0.1);
   padding-top: 6px;
+  cursor: pointer;
 }
 
 .hamburger div {
@@ -654,28 +657,8 @@ Animations
   max-width: 100%;
 }
 
-.flat-about {
-  padding: 299px 0;
-}
-.flat-about .box-1 {
-  margin-bottom: 32px;
-}
-.flat-about h3 {
-  margin-bottom: 12px;
-}
-.flat-about .bg-video {
-  background: linear-gradient(173.06deg, #E6902B -0.31%, #A91B3D 99.69%);
-  text-align: end;
-  margin-left: 76px;
-  margin-top: 17px;
-}
-.flat-about .bg-video .img-video img {
-  margin-top: -27px;
-  margin-bottom: 27px;
-}
-
 .only-pagination {
-  position: absolute;
+  position: fixed;
   right: 38px;
   z-index: 999;
   top: 46%;
@@ -704,12 +687,12 @@ Animations
   font-size: 18px;
   line-height: 24px;
   font-weight: 600;
-  position: absolute;
+  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  bottom: 69px;
+  bottom: 30px;
   right: 21px;
   z-index: 99;
   -webkit-transition: all 0.3s ease;
@@ -721,6 +704,39 @@ Animations
 .book-now:hover {
   color: #fff;
   background: linear-gradient(#000, #000) padding-box, linear-gradient(153.06deg, #E6902B -0.31%, #A91B3D 99.69%) border-box;
+}
+
+.heading-section {
+  margin-bottom: 48px;
+}
+.heading-section h1 {
+  margin-bottom: 32px;
+  text-transform: capitalize;
+}
+.heading-section .title-69 {
+  font-size: 69px;
+  letter-spacing: -3px;
+  margin-bottom: 27px;
+}
+
+.flat-about {
+  padding: 299px 0;
+}
+.flat-about .box-1 {
+  margin-bottom: 32px;
+}
+.flat-about h3 {
+  margin-bottom: 12px;
+}
+.flat-about .bg-video {
+  background: linear-gradient(173.06deg, #E6902B -0.31%, #A91B3D 99.69%);
+  text-align: end;
+  margin-left: 76px;
+  margin-top: 17px;
+}
+.flat-about .bg-video .img-video img {
+  margin-top: -27px;
+  margin-bottom: 27px;
 }
 
 .img-video {
@@ -735,7 +751,7 @@ Animations
   height: 100px;
   background: #fff;
   border-radius: 50%;
-  padding-left: 11px;
+  padding-left: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1235,6 +1251,9 @@ Animations
   font-size: 14px;
   font-weight: 400;
 }
+#comments .comment-form fieldset input:focus {
+  border-color: #F38535;
+}
 #comments .comment-form textarea {
   background-color: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.16);
@@ -1245,6 +1264,9 @@ Animations
   color: rgba(255, 255, 255, 0.6);
   line-height: 22px;
   font-size: 14px;
+}
+#comments .comment-form textarea:focus {
+  border-color: #F38535;
 }
 #comments .comment-form .button {
   margin-top: 46px;
@@ -1737,6 +1759,10 @@ Animations
   line-height: 24px;
   font-size: 16px;
 }
+.flat-contact-send #comments .comment-form fieldset input:focus {
+  border: 1px solid #F38535;
+  padding: 9px 14px 9px 12px;
+}
 .flat-contact-send #comments .comment-form fieldset.style-1 {
   padding-right: 15px;
 }
@@ -1753,6 +1779,10 @@ Animations
   color: #818089;
   line-height: 24px;
   font-size: 16px;
+}
+.flat-contact-send #comments .comment-form textarea:focus {
+  border: 1px solid #F38535;
+  padding: 11px 14px 30px 12px;
 }
 .flat-contact-send #comments .comment-form .button {
   margin-top: 18px;
@@ -2263,6 +2293,9 @@ Animations
   line-height: 21px;
   padding: 30px 16px 11px 18px;
   border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.side-bar .widget-price .booking-box input:focus {
+  border-color: #F38535;
 }
 .side-bar .widget-price .booking-box [type=date]::after {
   content: "\f073";
@@ -2810,22 +2843,6 @@ Animations
   transform: scale(1, 1);
   transform-origin: top;
 }
-.box-hv .hover-style.hv2::before {
-  transform-origin: unset;
-  background: rgba(194, 151, 101, 0.5019607843);
-  transform: scale(1, 0);
-}
-.box-hv:hover .hover-style.hv2::before {
-  transform: scale(1, 1);
-  transform-origin: center;
-}
-.box-hv .hover-style.hv3::before {
-  background: rgba(194, 151, 101, 0.5019607843) !important;
-  transform: scale(1, 0);
-}
-.box-hv:hover .hover-style.hv3::before {
-  transform: scale(1, 1);
-}
 
 .slider .swiper-button-next,
 .slider .swiper-button-prev {
@@ -2933,9 +2950,6 @@ Animations
 .slider {
   position: relative;
   overflow: hidden;
-}
-.slider .book-now {
-  bottom: 104px;
 }
 .slider .img-slider img {
   position: absolute;
@@ -3147,6 +3161,29 @@ Animations
 
 /* Modal Popup  ----------
 -------------------------*/
+:root {
+  --stepNumber: 3;
+}
+
+form .page {
+  width: calc(100% / var(--stepNumber));
+  transition: margin-left 0.3s ease-in-out;
+}
+
+.form-outer {
+  width: 100%;
+  overflow: hidden;
+}
+
+.form-outer form {
+  display: flex;
+  width: calc(100% * var(--stepNumber));
+}
+
+.modal-body fieldset .invalid-input {
+  border-color: #ff0000;
+}
+
 .text-12 {
   font-weight: 400;
   font-size: 12px;
@@ -3260,8 +3297,43 @@ Animations
 .modal-body .box-step .inner .step.style-1 {
   border: 1px solid #F38535;
 }
-.modal-body .box-step .inner .step.style-2 {
+.modal-body .box-step .inner .step.style-1::before {
+  content: "1";
+  color: #000;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+}
+.modal-body .box-step .inner .step.style-2::before {
+  content: "2";
+  color: #000;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+}
+.modal-body .box-step .inner .step.style-3::before {
+  content: "3";
+  color: #000;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+}
+.modal-body .box-step .inner .step.active {
   border: 1px solid #48BC65;
+  background-color: #fff;
+}
+.modal-body .box-step .inner .step.active::before {
+  content: "\f00c";
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 500;
+  font-size: 14px;
+  color: #48BC65;
 }
 .modal-body .box-step .inner .step::after {
   content: "";
@@ -3282,9 +3354,6 @@ Animations
 .modal-body .box-step:last-child .inner .step::after {
   display: none;
 }
-.modal-body .form-info {
-  margin-bottom: 30px;
-}
 .modal-body fieldset {
   position: relative;
   overflow: hidden;
@@ -3303,6 +3372,12 @@ Animations
   color: #C3C2D1;
   line-height: 24px;
   font-size: 16px;
+}
+.modal-body .btn-style1 {
+  margin-top: 20px;
+}
+.modal-body .btn-style2 {
+  margin-top: 26px;
 }
 .modal-body .flat-tabs .tab-title {
   display: block;
@@ -3519,7 +3594,6 @@ Animations
 }
 .modal-body .wrap-pay .box-pay.box-2 {
   text-align: end;
-  margin-right: -5px;
 }
 .modal-body .wrap-pay .box-pay.box-2 .text-pay {
   background: linear-gradient(0deg, rgba(58, 51, 53, 0.04), rgba(58, 51, 53, 0.04)), #FFFFFF;

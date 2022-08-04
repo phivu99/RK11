@@ -4,8 +4,6 @@
 .flat-im {
     -webkit-transition: all 1.5s cubic-bezier(0, 0, 0.2, 1);
     transition: all 1.5s cubic-bezier(0, 0, 0.2, 1);
-    // -webkit-transition: all 1s cubic-bezier(0.30, 1, 0.35, 1) 0s;
-    //         transition: all 1s cubic-bezier(0.30, 1, 0.35, 1) 0s;
 }
 
 .hover-img {
@@ -82,29 +80,6 @@
     &:hover .hover-style::before {
         transform: scale(1, 1);
         transform-origin: top;
-    } 
-
-    // hover 2
-    .hover-style.hv2 {
-        &::before {
-            transform-origin: unset;
-            background: #C2976580;
-            transform: scale(1, 0 );
-        }
-    }
-    &:hover .hover-style.hv2::before {
-        transform: scale(1, 1) ;
-        transform-origin: center;
-    }  
-    // hover 3
-    .hover-style.hv3 {
-        &::before {
-            background: #C2976580 !important;
-            transform: scale(1, 0 );
-        }
-    }
-    &:hover .hover-style.hv3::before {
-        transform: scale(1, 1);
     } 
 
 }

@@ -524,6 +524,10 @@
   }
 }
 @media only screen and (max-width: 767px) {
+  .form-outer form {
+    display: block;
+  }
+
   .tf-section2,
 .tf-section {
     padding: 0 0 75px;
@@ -538,6 +542,11 @@
     font-size: 18px;
     line-height: 28px;
     padding: 10px 15px;
+  }
+  .nav .sub-menu .menu-item a {
+    margin-left: 10px;
+    font-size: 16px;
+    line-height: 26px;
   }
 
   .mark-1 {
@@ -1241,6 +1250,9 @@
     padding: 24px 15px 26px;
   }
 
+  .flat-for-you .box .images img {
+    border-radius: 12px;
+  }
   .flat-for-you .box .content h4 {
     font-size: 18px;
   }
@@ -1267,72 +1279,73 @@
 .modal .modal-body .wrap-step {
     display: none;
   }
-  .modal .modal-body.body-1 {
-    padding: 30px 0px 30px !important;
+  .modal .modal-body .page-1 {
+    margin-bottom: 40px;
   }
-  .modal .modal-body.body-1 .btn {
+  .modal .modal-body .page-1 .btn {
     display: none;
   }
-  .modal .modal-body.body-1 .form-info {
+  .modal .modal-body .page-1 .form-info {
     margin-bottom: 0px;
   }
-  .modal .modal-body.body-2 {
+  .modal .modal-body .page-2 {
     padding: 0 !important;
+    margin-bottom: 40px;
   }
-  .modal .modal-body.body-2 h3 {
+  .modal .modal-body .page-2 h3 {
     display: none;
   }
-  .modal .modal-body.body-2 .btn {
+  .modal .modal-body .page-2 .btn {
     display: none;
   }
-  .modal .modal-body.body-2 .form div {
+  .modal .modal-body .page-2 .form div {
     display: block;
   }
-  .modal .modal-body.body-2 .wrap-visa {
+  .modal .modal-body .page-2 .wrap-visa {
     padding: 20px 0 0 0;
   }
-  .modal .modal-body.body-2 .wrap-visa .box-visa .images .texts-1 {
+  .modal .modal-body .page-2 .wrap-visa .box-visa .images .texts-1 {
     margin-right: 5px;
   }
-  .modal .modal-body.body-2 .wrap-visa .box-visa .images img {
+  .modal .modal-body .page-2 .wrap-visa .box-visa .images img {
     margin-right: 12px;
   }
-  .modal .modal-body.body-2 .wrap-visa .icon-check {
+  .modal .modal-body .page-2 .wrap-visa .icon-check {
     position: absolute;
     right: 10px;
   }
-  .modal .modal-body.body-2 p {
+  .modal .modal-body .page-2 p {
     font-size: 12px !important;
   }
-  .modal .modal-body.body-2 .flat-accordion {
+  .modal .modal-body .page-2 .flat-accordion {
     margin-bottom: 0;
   }
-  .modal .modal-body.body-2 .flat-accordion .toggle-content {
+  .modal .modal-body .page-2 .flat-accordion .toggle-content {
     padding-bottom: 25px;
   }
-  .modal .modal-body.body-2 .flat-accordion .toggle-content .form .button-btn {
+  .modal .modal-body .page-2 .flat-accordion .toggle-content .form .button-btn {
     width: 100%;
     text-align: center;
     padding: 10px 0;
     margin-top: 7px;
   }
-  .modal .modal-body.body-3 .wrap-images {
+  .modal .modal-body .page-3 .wrap-images {
     display: block;
     border: unset;
   }
-  .modal .modal-body.body-3 .wrap-images img {
+  .modal .modal-body .page-3 .wrap-images img {
     width: 100%;
   }
-  .modal .modal-body.body-3 .wrap-images .content {
+  .modal .modal-body .page-3 .wrap-images .content {
     padding: 22px 0 0 0px;
   }
-  .modal .modal-body.body-3 .wrap-images .content h6 {
+  .modal .modal-body .page-3 .wrap-images .content h6 {
     margin-bottom: 15px;
   }
-  .modal .modal-body.body-3 .wrap-pay {
+  .modal .modal-body .page-3 .wrap-pay {
     margin-bottom: 7px;
   }
-  .modal .modal-body.body-3 h3 {
+  .modal .modal-body .page-3 h3 {
     display: none;
   }
   .modal .modal-body .icon-prev {

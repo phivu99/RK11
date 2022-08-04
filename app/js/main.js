@@ -8,7 +8,7 @@
   * ajaxSubscribe
   * alertBox
   * loadmore
-  * Dark Light Mode
+
 */
 
 ; (function ($) {
@@ -145,37 +145,6 @@
         });
     };
 
-    //    Header Fixed
-    //    var headerFixed = function () {
-    //     if ($('body').hasClass('header-fixed')) {
-    //         var nav = $('#header_main');
-
-    //         if (nav.length) {
-    //             var offsetTop = nav.offset().top,
-    //                 headerHeight = nav.height(),
-    //                 injectSpace = $('<div />', {
-    //                     height: headerHeight
-    //                 }).insertAfter(nav);
-    //             injectSpace.hide();
-
-    //             $(window).on('load scroll', function () {
-    //                 if ($(window).scrollTop() > offsetTop) {
-    //                     nav.addClass('is-fixed');
-    //                     injectSpace.show();
-    //                 } else {
-    //                     nav.removeClass('is-fixed');
-    //                     injectSpace.hide();
-    //                 }
-
-    //                 if ($(window).scrollTop() > 500) {
-    //                     nav.addClass('is-small');
-    //                 } else {
-    //                     nav.removeClass('is-small');
-    //                 }
-    //             })
-    //         }
-    //     }
-    // };
 
     // Mobile Navigation
     var mobileNav = function () {
@@ -188,64 +157,24 @@
     
         mobile.addListener(responsivemenu);
     
-        function responsivemenu(mobile) {
-          if (mobile.matches) {
-        //     $("#main-nav")
-        //       .attr("id", "main-nav-mobi")
-        //       .appendTo("#header_main")
-        //       .hide()
-        //       .children(".menu")
-        //       .append(navExt)
-        //       .find("li:has(ul)")
-        //       .children("ul")
-        //       .removeAttr("style")
-        //       .hide()
-        //       .before('<span class="arrow"></span>');
-        //   } else {
-            $(".menu-item-has-children")
-            //   .attr("id", "main-nav")
-            //   .removeAttr("style")
-            //   .prependTo(wrapMenu)
-            //   .find(".ext")
-            //   .appendTo(navExtw)
-            //   .parent()
-            //   .siblings("#main-nav")
-            //   .find(".sub-menu")
-            //   .removeAttr("style")
-            //   .prev()
-            //   .remove();
-    
-            // $(".menu-item-has-children").removeClass("active");
-            // $(".menu-item-has-children").removeClass("style");
-            // $(".mobile-button-style2").removeClass("active");
-            // $(".sub-menu").css({ display: "block" });
-          }
-        }
         $(document).on("click", ".nav", function () {
           $(this).toggleClass("active");
           
           $("#main-nav-mobi").slideToggle();
-        //   $(".menu-item-has-children").removeAttr("style")
         });
-        $(document).on("click", ".mobile-button-style2", function () {
-          $(this).toggleClass("active");
-          $("#main-nav-mobi").slideToggle();
-        });
-        $(document).on("click", ".menu-item-has-children .arrow", function () {
-          $(this).toggleClass("active").next().slideToggle();
-        //   $(".menu-item-has-children").removeAttr("style");
-        });
+     
       };
+
       $(document).on("click", ".nav", function () {
         $(this).toggleClass("active");
         
         $("#main-nav-mobi").slideToggle();
-      //   $(".menu-item-has-children").removeAttr("style")
       });
+
       $(document).on("click", ".menu-item-has-children .arrow", function () {
         $(this).toggleClass("active").next().slideToggle();
-      //   $(".menu-item-has-children").removeAttr("style");
       });
+
     var ajaxSubscribe = {
         obj: {
             subscribeEmail: $('#subscribe-email'),
@@ -333,13 +262,6 @@
             e.preventDefault();
         })
     };
-
-    // var alertBox = function () {
-    //     $(document).on('click', '.close', function (e) {
-    //         $(this).closest('.flat-alert').remove();
-    //         e.preventDefault();
-    //     })
-    // };
 
 
     // Dom Ready

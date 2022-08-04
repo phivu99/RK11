@@ -9,7 +9,7 @@
     }
     .flat-event .wrap-event {
       margin-left: 0;
-    }
+    }  
 
     .flat-contact .book-now {
       display: none;
@@ -559,6 +559,10 @@
 
   @media only screen and (max-width: 767px) {
 
+    .form-outer form {
+      display: block;
+    }
+
     .tf-section2,
     .tf-section {
       padding: 0 0 75px;
@@ -572,6 +576,11 @@
         font-size: 18px;
         line-height: 28px;
         padding: 10px 15px;
+      }
+      .sub-menu .menu-item a {
+        margin-left: 10px;
+        font-size: 16px;
+        line-height: 26px;
       }
     }
 
@@ -1338,12 +1347,17 @@
       }
     }
 
-    .flat-for-you .box .content {
-      h4 {
-        font-size: 18px;
+    .flat-for-you .box {
+      .images img {
+        border-radius: 12px;
       }
-      p {
-        font-size: 14px !important;
+      .content {
+        h4 {
+          font-size: 18px;
+        }
+        p {
+          font-size: 14px !important;
+        }
       }
     }
 
@@ -1367,8 +1381,9 @@
         .wrap-step {
           display: none;
         }
-        &.body-1 {
-          padding: 30px 0px 30px !important;
+        .page-1 {
+          // padding: 30px 0px 30px !important;
+          margin-bottom: 40px;
           .btn {
             display: none;
           }
@@ -1376,8 +1391,9 @@
             margin-bottom: 0px;
           }
         }
-        &.body-2 {
+        .page-2 {
           padding: 0 !important;
+          margin-bottom: 40px;
           h3 {
             display: none;
           }
@@ -1428,8 +1444,7 @@
           }
         }
 
-        
-        &.body-3 {
+        .page-3 {
           .wrap-images {
             display: block;
             border: unset;
@@ -1628,7 +1643,6 @@
       font-size: 32px;
       line-height: 42px;
     }
-
 
     .flat-event .wrap-event .event-box {
       bottom: 350px;

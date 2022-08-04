@@ -1,5 +1,5 @@
 /**
-  * Name: Pesonal Portfolio HTML Template
+  * Name:  KR11 HTML Template
   * Version: 1.0
   * Author: Themesflat
   * Author URI: http://www.themesflat.com
@@ -8,7 +8,6 @@
 @import "animate.css";
 @import "jquery.fancybox.min.css";
 @import "../dist/font-awesome.css";
-@import "magnific-popup.css";
 @import "swiper-bundle.min.css";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
@@ -22,20 +21,11 @@
 	* Extra classes
 	* link style
 	* Root
-	* Header
-	* Site Logo
-    * Menu
     * search
     * Header Fixed
-    * Pagination
     * Scroll Top
-    * Footer
-    * Widget
     * PreLoad
-    * side bar
-    * donat progress
-    * heading 
-    * hover 
+    * dropdown
 */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q,
 s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th,
@@ -1064,46 +1054,6 @@ a:hover, a:focus {
   visibility: visible;
 }
 
-/* Pagination
--------------------------------------------------------------- */
-.themesflat-pagination {
-  margin-top: -1px;
-}
-.themesflat-pagination ul {
-  position: relative;
-}
-.themesflat-pagination ul li {
-  display: inline-block;
-  margin-right: 5px;
-}
-.themesflat-pagination ul li:last-child {
-  margin-right: 0;
-}
-.themesflat-pagination ul li .page-numbers {
-  display: inline-block;
-  font-size: 16px;
-  font-weight: 400;
-  color: var(--primary-color2);
-  text-align: center;
-  width: 40px;
-  height: 40px;
-  border: 1px solid var(--primary-color5);
-  line-height: 40px;
-  border-radius: 8px;
-  object-fit: cover;
-  position: relative;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-.themesflat-pagination ul li .page-numbers:hover, .themesflat-pagination ul li .page-numbers.current {
-  background-color: var(--primary-color3);
-  color: #fff;
-  border-color: var(--primary-color3);
-}
-
 /* Scroll Top
 -------------------------------------------------------------- */
 #scroll-top {
@@ -1419,23 +1369,6 @@ a:hover, a:focus {
     transform: rotate(360deg);
   }
 }
-.side-bar .search-field::placeholder {
-  font-size: 13px;
-}
-
-.heading-section {
-  margin-bottom: 48px;
-}
-.heading-section h1 {
-  margin-bottom: 32px;
-  text-transform: capitalize;
-}
-.heading-section .title-69 {
-  font-size: 69px;
-  letter-spacing: -3px;
-  margin-bottom: 27px;
-}
-
 .dropdown > a {
   position: relative;
   display: block;
