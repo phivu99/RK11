@@ -336,7 +336,7 @@
                 var offsetTop = $(elem).offset().top;
                 var outerHeight = $(this).outerHeight(true);
 
-                if (windowTop > (offsetTop - 100) && windowTop < (offsetTop + outerHeight)) {
+                if (windowTop > (offsetTop - 120) && windowTop < (offsetTop + outerHeight)) {
                     var elemId = $(elem).attr('id');
                     $(".only-pagination a").removeClass('active ');
                     $(".only-pagination a[href='#" + elemId + "']").addClass('active');

@@ -977,6 +977,9 @@
   .flat-about .bg-video {
     margin-bottom: 40px;
   }
+  .flat-about .bg-video .img-video {
+    text-align: center;
+  }
   .flat-about .bg-video .img-video img {
     margin-bottom: 20px;
     margin-left: 0px;

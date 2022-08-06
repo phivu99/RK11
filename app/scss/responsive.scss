@@ -177,6 +177,8 @@
       padding-right: 0px; 
     }
 
+
+
   }
   
   @media only screen and (max-width: 991px) {
@@ -1044,10 +1046,13 @@
       padding: 135px 0 75px;
       .bg-video {
         margin-bottom: 40px;
-        .img-video img {
-          margin-bottom: 20px;
-          margin-left: 0px; 
-          margin-top: 20px; 
+        .img-video {
+          text-align: center;
+          img {
+            margin-bottom: 20px;
+            margin-left: 0px; 
+            margin-top: 20px; 
+          }
         }
       }
       .heading-section {
