@@ -1,8 +1,10 @@
 @use '../abstracts/' as *;
 
+
 // side bar
 .side-bar {
-    padding: 8px 0 0;
+    padding: 0;
+    margin-top: -77px;
     .title-sidebar {
         font-size: 32px;
         font-weight: 700;

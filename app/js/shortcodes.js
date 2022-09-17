@@ -311,8 +311,10 @@
 
     var tabs = function(){
         $('.flat-tabs').each(function(){
+            // $(this).find('.sidebar').find('.title-sidebar').addClass("uptabs");
             $(this).find('.content-tab').children().hide();
             $(this).find('.content-tab').children().first().show();
+            
             $(this).find('.menu-tab').children('li').on('click',function(){
                 var liActive = $(this).index();
                 var contentActive=$(this).siblings().removeClass('active').parents('.flat-tabs').find('.content-tab').children().eq(liActive);

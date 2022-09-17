@@ -1199,8 +1199,66 @@
 .flat-price-outlets {
     padding-top: 156px;
     padding-bottom: 60px;
+    .thems-tab-up {
+        &.themesflat-tabs {
+            margin-bottom: 4px;
+        }
+        .box-tab2 {
+            width: 64%;
+            margin-bottom: 41px;
+            margin-top: 6px;
+            padding-bottom: 17px;
+            border-bottom: 1px solid rgba(50, 36, 41, 1);
+        }
+        .tab-title {
+            display      : flex;
+            align-items  : center;
+            padding      : 0px 0;
+            li {
+                position    : relative;
+                margin-right: 48.5px;
+                cursor      : pointer;
+                border-radius: 12px;
+             
+                h4 {
+                    color: #818089;
+                    @include transition3;
+                    position: relative;
+                    &::after {
+                        content: "";
+                        width: 0;
+                        height: 2px;
+                        position: absolute;
+                        background: $bg-color;
+                        left: 0%;
+                        bottom: -18.5px;
+                        transform: translateX(-50%);
+                        visibility: hidden;
+                        opacity: 0;
+                        @include transition3;
+                    }
+                }
+                &.active,
+                &:hover {
+                    border: 0px solid ;
+                    background: unset;                    
+                    h4 {
+                        color: $color-1;
+                        &::after {
+                            width: 100%;
+                            visibility: visible;
+                            opacity: 1;
+                            left: 50%;
+                            @include transition3;
+                        }
+                    }
+                }
+            }
+        }
+    } 
     .post {
         padding-right: 29px;
+        
         .post-about {
             margin-bottom: 61px;
             h3 {
@@ -1235,7 +1293,7 @@
         .post-packages {
             margin-bottom: 61px;
             h3 {
-                margin-bottom: 15px;
+                margin-bottom: 35px;
             }
             .wrap {
                 margin-left: -30px;
@@ -1244,8 +1302,9 @@
                     background: rgba(39, 31, 36, 0.7);
                     border: 1px solid rgba(238, 238, 238, 0.1);
                     box-shadow: 0px 8px 25px rgba(57, 76, 98, 0.12);
-                    border-radius: 16px;
-                    padding: 23px 23px;
+                    border-radius: 10px;
+                    // padding: 23px 23px;
+                    padding: 32px 31px;
                     margin-left: 30px;
                     position: relative;
                     @include transition3;
@@ -1258,8 +1317,11 @@
                         text-align: center;
                         background: $bg-color;
                         border-radius: 50%;
-                        margin-bottom: 19px;
+                        margin-right: 26px;
                         @include transition3;
+                    }
+                    .content {
+                        padding-top: 2px;
                     }
                     h4 {
                         margin-bottom: 10px;
@@ -1282,7 +1344,7 @@
                         background: $bg-color;
                         border: 0px solid transparent;
                         transition: all 0s ease;
-                        padding: 24px;
+                        padding: 33px 32px;
                         .icon {
                             background: rgba(255, 255, 255, 0.2);
                         }
@@ -1393,8 +1455,9 @@
                 }
             }
         }
+      
         // flat tabs
-        .flat-tabs {
+        .thems-tabs {
             &.themesflat-tabs {
                 margin-bottom: 4px;
             }
@@ -1431,6 +1494,7 @@
         }  
     }
 }
+
 
 // post orders
 .post-orders {
