@@ -326,6 +326,22 @@
         });
     };
 
+    var tabs2 = function(){
+        $('.flat-tabs2').each(function(){
+            $(this).find('.content-tab2').children().hide();
+            $(this).find('.content-tab2').children().first().show();
+            
+            $(this).find('.menu-tab2').children('li').on('click',function(){
+                var liActive = $(this).index();
+                var contentActive=$(this).siblings().removeClass('active').parents('.flat-tabs2').find('.content-tab2').children().eq(liActive);
+                contentActive.addClass('active').fadeIn("slow");
+                contentActive.siblings().removeClass('active');
+                $(this).addClass('active').parents('.flat-tabs2').find('.content-tab2').children().eq(liActive).siblings().hide();
+                swiper_tab();
+            });
+        });
+    };
+
     var activeMenuAndSmoothScroll = function () {
         // smoothscroll
         smoothScroll.init({
@@ -429,6 +445,7 @@
         // popupGallery();
         donatProgress();
         tabs();
+        tabs2();
         btnQuantity();
         dropdown('#item_category');
         Preloader();
